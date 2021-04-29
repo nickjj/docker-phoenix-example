@@ -14,6 +14,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 
 - Use the Docker Compose spec in `docker-compose.yml` (removes `version:` property)
+- Update Tailwind from `2.1.1` to `2.1.2`
 
 ## [0.1.0] - 2021-04-15
 
