@@ -16,6 +16,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Use the Docker Compose spec in `docker-compose.yml` (removes `version:` property)
 - Update Tailwind from `2.1.1` to `2.1.2`
 - Update all Webpack related dependencies to their latest versions
+- Update `ecto_sql` from `3.6.0` to `3.6.1`
+- Update `plug_cowboy` from `2.4.1` to `2.5.0`
+- Update `postgrex` from `0.15.8` to `0.15.9`
+- Update `phoenix_live_view` from `0.15.4` to `0.15.5`
 
 ## [0.1.0] - 2021-04-15
 
