@@ -11,6 +11,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - `bin/rename-project` script to assist with renaming the project
 
+### Changed
+
+- Use the Docker Compose spec in `docker-compose.yml` (removes `version:` property)
+
 ## [0.1.0] - 2021-04-15
 
 ### Added
