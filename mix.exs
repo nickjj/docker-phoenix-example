@@ -35,7 +35,7 @@ defmodule Hello.MixProject do
       {:floki, ">= 0.27.0", only: :test},
       {:gettext, "0.18.2"},
       {:jason, "1.2.2"},
-      {:phoenix, "1.5.8"},
+      {:phoenix, "1.5.9"},
       {:phoenix_ecto, "4.2.1"},
       {:phoenix_html, "2.14.3"},
       {:phoenix_live_dashboard, "0.4.0"},
