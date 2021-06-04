@@ -19,10 +19,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update Elixir from `1.11.4` to `1.21.1`
 - Update PostgreSQL from `13.2` to `13.3`
 - Update `phoenix` from `1.5.8` to `1.5.9`
-- Update `ecto_sql` from `3.6.0` to `3.6.1`
+- Update `ecto_sql` from `3.6.0` to `3.6.2`
 - Update `plug_cowboy` from `2.4.1` to `2.5.0`
 - Update `postgrex` from `0.15.8` to `0.15.9`
-- Update `phoenix_live_view` from `0.15.4` to `0.15.5`
+- Update `credo` from `1.5.5` to `1.5.6`
+- Update `excoveralls` from `0.14.0` to `0.14.1`
+- Update `phoenix_live_view` from `0.15.4` to `0.15.7`
 
 ## [0.1.0] - 2021-04-15
 
