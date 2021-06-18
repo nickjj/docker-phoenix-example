@@ -131,7 +131,7 @@ these commands for PowerShell if you want.
 git clone https://github.com/nickjj/docker-phoenix-example hellophoenix
 cd hellophoenix
 
-# Optionally checkout a specific tag, such as: git checkout 0.1.0
+# Optionally checkout a specific tag, such as: git checkout 0.2.0
 ```
 
 #### Copy a few example files because the real files are git ignored:
