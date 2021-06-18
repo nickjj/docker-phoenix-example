@@ -32,7 +32,7 @@ defmodule Hello.MixProject do
       {:credo, "1.5.6", only: [:dev, :test], runtime: false},
       {:ecto_sql, "3.6.2"},
       {:excoveralls, "0.14.1", only: [:dev, :test]},
-      {:floki, ">= 0.27.0", only: :test},
+      {:floki, ">= 0.31.0", only: :test},
       {:gettext, "0.18.2"},
       {:jason, "1.2.2"},
       {:phoenix, "1.5.9"},
