@@ -7,7 +7,29 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-- Nothing yet!
+### Changed
+
+#### Languages and services
+
+- Update `Elixir` to `1.12.2`
+
+#### Back-end dependencies
+
+- Update `phoenix_ecto` to `4.3.0`
+- Update `phoenix_live_reload` to `1.3.3`
+- Update `telemetry_metrics` to `0.6.1`
+
+#### Front-end dependencies
+
+- Update `@babel/preset-env` to `7.14.7`
+- Update `autoprefixer` to `10.3.1`
+- Update `copy-webpack-plugin` to `9.0.1`
+- Update `css-loader` to `6.1.0`
+- Update `css-minimizer-webpack-plugin` to `3.0.2`
+- Update `mini-css-extract-plugin` to `2.1.0`
+- Update `postcss-loader` to `6.1.1`
+- Update `tailwindcss` to `2.2.4`
+- Update `webpack` to `5.45.1`
 
 ## [0.2.0] - 2021-06-18
 

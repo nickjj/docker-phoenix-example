@@ -13,7 +13,7 @@ For the Docker bits, everything included is an accumulation of Docker best
 practices based on building and deploying dozens of assorted Dockerized web
 apps since late 2014.
 
-**This app is using Phoenix 1.5.9 and Elixir 1.12.1**. The screenshot doesn't
+**This app is using Phoenix 1.5.9 and Elixir 1.12.2**. The screenshot doesn't
 get updated every time I bump the versions:
 
 [![Screenshot](.github/docs/screenshot.jpg)](https://github.com/nickjj/docker-phoenix-example/blob/main/.github/docs/screenshot.jpg?raw=true)
