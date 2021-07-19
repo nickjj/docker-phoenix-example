@@ -9,6 +9,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- `tailwind.config.js` now uses `'/app/lib/hello_web/**/*.*ex'` to match Elixir and all template types
+
 #### Languages and services
 
 - Update `Elixir` to `1.12.2`
