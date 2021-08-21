@@ -17,9 +17,14 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
+- Update `ecto_sql` to `3.7.0`
 - Update `excoveralls` to `0.14.2`
-- Update `phoenix_ecto` to `4.3.0`
+- Update `phoenix_ecto` to `4.4.0`
+- Update `phoenix_html` to `3.0.2`
+- Update `phoenix_live_dashboard` to `0.5.0`
 - Update `phoenix_live_reload` to `1.3.3`
+- Update `phoenix_live_view` to `0.16.0`
+- Update `phoenix` to `1.5.11`
 - Update `plug_cowboy` to `2.5.1`
 - Update `telemetry_metrics` to `0.6.1`
 
@@ -27,15 +32,19 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `@babel/core` to `7.15.0`
 - Update `@babel/preset-env` to `7.15.0`
+- Update `@babel/register` to `7.15.3`
 - Update `autoprefixer` to `10.3.1`
 - Update `copy-webpack-plugin` to `9.0.1`
 - Update `css-loader` to `6.2.0`
 - Update `css-minimizer-webpack-plugin` to `3.0.2`
 - Update `mini-css-extract-plugin` to `2.2.0`
+- Update `phoenix_live_view` to `0.16.0`
+- Update `phoenix` to `1.5.11`
 - Update `postcss-loader` to `6.1.1`
 - Update `postcss` to `8.3.6`
 - Update `tailwindcss` to `2.2.7`
-- Update `webpack` to `5.48.0`
+- Update `webpack-cli` to `4.8.0`
+- Update `webpack` to `5.51.1`
 
 ## [0.2.0] - 2021-06-18
 

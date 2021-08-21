@@ -1,15 +1,15 @@
 {
   "repository": {},
   "dependencies": {
-    "phoenix": "1.5.9",
+    "phoenix": "1.5.11",
     "phoenix_html": "2.14.3",
-    "phoenix_live_view": "0.15.7",
+    "phoenix_live_view": "0.16.0",
     "topbar": "1.0.1"
   },
   "devDependencies": {
     "@babel/core": "7.15.0",
     "@babel/preset-env": "7.15.0",
-    "@babel/register": "7.14.5",
+    "@babel/register": "7.15.3",
     "autoprefixer": "10.3.1",
     "babel-loader": "8.2.2",
     "copy-webpack-plugin": "9.0.1",
@@ -21,8 +21,8 @@
     "postcss-loader": "6.1.1",
     "precss": "4.0.0",
     "tailwindcss": "2.2.7",
-    "webpack": "5.48.0",
-    "webpack-cli": "4.7.2",
+    "webpack": "5.51.1",
+    "webpack-cli": "4.8.0",
     "webpack-merge": "5.8.0"
   },
   "scripts": {
