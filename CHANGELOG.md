@@ -7,7 +7,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-- Nothing yet!
+### Fixed
+
+- `channel_case.ex` had the old `setup tags` code, now it's been updated
 
 ## [0.3.0] - 2021-09-25
 
