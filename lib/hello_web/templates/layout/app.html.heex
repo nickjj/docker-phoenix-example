@@ -1,6 +1,6 @@
 <%= for {type, message} <- get_flash(@conn) do %>
   <% class = ViewHelpers.flash_class(type) %>
-  <div class="text-white px-4 py-2 relative mb-4 text-center <%= class %>" role="alert">
+  <div class={"text-white px-4 py-2 relative mb-4 text-center #{class}"} role="alert">
     <p class="inline-block align-middle mr-8"><%= message %></p>
   </div>
 <% end %>

@@ -6,14 +6,14 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="A production ready example Django app that's using Docker and Docker Compose.">
+    <meta name="description" content="A production ready example Phoenix app that's using Docker and Docker Compose.">
 
-    <link phx-track-static rel="stylesheet" href="<%= Routes.static_url(@conn, "/css/app.css") %>"/>
-    <script defer phx-track-static type="text/javascript" src="<%= Routes.static_url(@conn, "/js/app.js") %>"></script>
+    <link phx-track-static rel="stylesheet" href={Routes.static_url(@conn, "/css/app.css")}/>
+    <script defer phx-track-static type="text/javascript" src={Routes.static_url(@conn, "/js/app.js")}></script>
 
-    <link rel="apple-touch-icon" sizes="180x180" href="<%= Routes.static_url(@conn, "/apple-touch-icon.png") %>"/>
-    <link rel="mask-icon" href="<%= Routes.static_url(@conn, "/safari-pinned-tab.svg") %>" color="#384051"/>
-    <link rel="manifest" href="<%= Routes.static_url(@conn, "/manifest.json") %>"/>
+    <link rel="apple-touch-icon" sizes="180x180" href={Routes.static_url(@conn, "/apple-touch-icon.png")}/>
+    <link rel="mask-icon" href={Routes.static_url(@conn, "/safari-pinned-tab.svg")} color="#384051"/>
+    <link rel="manifest" href={Routes.static_url(@conn, "/manifest.json")}/>
   </head>
   <body class="flex flex-col h-screen justify-between">
     <div class="bg-gray-700">

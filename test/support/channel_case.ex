@@ -34,5 +34,11 @@ defmodule HelloWeb.ChannelCase do
     end
 
     :ok
+
+    # maybe use this
+    # pid = Ecto.Adapters.SQL.Sandbox.start_owner!(Hello.Repo, shared: not tags[:async])
+    # on_exit(fn -> Ecto.Adapters.SQL.Sandbox.stop_owner(pid) end)
+
+    # :ok
   end
 end

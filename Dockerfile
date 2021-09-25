@@ -35,7 +35,7 @@ CMD ["bash"]
 
 ###############################################################################
 
-FROM elixir:1.12.2-slim AS dev
+FROM elixir:1.12.3-slim AS dev
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app

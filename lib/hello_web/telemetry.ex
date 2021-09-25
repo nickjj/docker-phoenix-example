@@ -33,11 +33,27 @@ defmodule HelloWeb.Telemetry do
       ),
 
       # Database Metrics
-      summary("hello.repo.query.total_time", unit: {:native, :millisecond}),
-      summary("hello.repo.query.decode_time", unit: {:native, :millisecond}),
-      summary("hello.repo.query.query_time", unit: {:native, :millisecond}),
-      summary("hello.repo.query.queue_time", unit: {:native, :millisecond}),
-      summary("hello.repo.query.idle_time", unit: {:native, :millisecond}),
+      summary("hello.repo.query.total_time",
+        unit: {:native, :millisecond},
+        description: "The sum of the other measurements"
+      ),
+      summary("hello.repo.query.decode_time",
+        unit: {:native, :millisecond},
+        description: "Time spent decoding the data received from the database"
+      ),
+      summary("hello.repo.query.query_time",
+        unit: {:native, :millisecond},
+        description: "Time spent executing the query"
+      ),
+      summary("hello.repo.query.queue_time",
+        unit: {:native, :millisecond},
+        description: "Time spent waiting for a database connection"
+      ),
+      summary("hello.repo.query.idle_time",
+        unit: {:native, :millisecond},
+        description:
+          "Time spent waiting for the conn to be checked out for the query"
+      ),
 
       # VM Metrics
       summary("vm.memory.total", unit: {:byte, :kilobyte}),

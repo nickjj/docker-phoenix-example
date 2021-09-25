@@ -14,7 +14,7 @@ practices](https://nickjanetakis.com/blog/best-practices-around-production-ready
 based on building and deploying dozens of assorted Dockerized web apps since
 late 2014.
 
-**This app is using Phoenix 1.5.12 and Elixir 1.12.2**. The screenshot doesn't
+**This app is using Phoenix 1.6.0 and Elixir 1.12.3**. The screenshot doesn't
 get updated every time I bump the versions:
 
 [![Screenshot](.github/docs/screenshot.jpg)](https://github.com/nickjj/docker-phoenix-example/blob/main/.github/docs/screenshot.jpg?raw=true)
@@ -98,7 +98,6 @@ worthy additions and changes.
     - A `lib/hello/release.ex` module has been added to run migrations with releases
     - `.formatter.exs` has been configured to use 80 character line lengths
     - An empty `.iex.exs` file has been created so you can customize your IEx sessions however you see fit
-    - The project was generated with `--live` but the `live/` directory was removed
     - Both regular and live view flash messages are set up to use a for comprehension
     - CSS, JS and image links are referenced with `Routes.static_url` to support optionally using a CDN
     - Webpack's watcher is handled by Webpack directly

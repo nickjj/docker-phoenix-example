@@ -7,26 +7,34 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Added
+
+- Swoosh back-end dependency for sending emails (introduced by Phoenix 1.6)
+
 ### Changed
 
 - `tailwind.config.js` now uses `'/app/lib/hello_web/**/*.*ex'` to match Elixir and all template types
+- Convert all templates to HEEx
+- Update all `test/support/*_case.ex` files to use Phoenix 1.6's updated `setup tags do ... end`
 
 #### Languages and services
 
-- Update `Elixir` to `1.12.2`
+- Update `Elixir` to `1.12.3`
+- Update `PostgreSQL` to `13.4`
 
 #### Back-end dependencies
 
 - Update `ecto_sql` to `3.7.0`
 - Update `excoveralls` to `0.14.2`
 - Update `phoenix_ecto` to `4.4.0`
-- Update `phoenix_html` to `3.0.3`
-- Update `phoenix_live_dashboard` to `0.5.0`
+- Update `phoenix_html` to `3.0.4`
+- Update `phoenix_live_dashboard` to `0.5.2`
 - Update `phoenix_live_reload` to `1.3.3`
-- Update `phoenix_live_view` to `0.16.3`
-- Update `phoenix` to `1.5.12`
-- Update `plug_cowboy` to `2.5.1`
+- Update `phoenix_live_view` to `0.16.4`
+- Update `phoenix` to `1.6.0`
+- Update `plug_cowboy` to `2.5.2`
 - Update `telemetry_metrics` to `0.6.1`
+- Update `telemetry_poller` to `1.0.0`
 
 #### Front-end dependencies
 
@@ -46,6 +54,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `tailwindcss` to `2.2.9`
 - Update `webpack-cli` to `4.8.0`
 - Update `webpack` to `5.52.0`
+
+### Fixed
+
+- `root.html.heex`'s meta description referencing Django instead of Phoenix
 
 ## [0.2.0] - 2021-06-18
 

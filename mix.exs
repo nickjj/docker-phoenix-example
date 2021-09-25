@@ -5,7 +5,7 @@ defmodule Hello.MixProject do
     [
       app: :hello,
       version: "0.1.0",
-      elixir: "~> 1.11",
+      elixir: "~> 1.12",
       elixirc_paths: elixirc_paths(Mix.env()),
       compilers: [:phoenix, :gettext] ++ Mix.compilers(),
       start_permanent: Mix.env() == :prod,
@@ -35,16 +35,17 @@ defmodule Hello.MixProject do
       {:floki, ">= 0.31.0", only: :test},
       {:gettext, "0.18.2"},
       {:jason, "1.2.2"},
-      {:phoenix, "1.5.12"},
+      {:phoenix, "1.6.0"},
       {:phoenix_ecto, "4.4.0"},
-      {:phoenix_html, "3.0.3"},
-      {:phoenix_live_dashboard, "0.5.0"},
+      {:phoenix_html, "3.0.4"},
+      {:phoenix_live_dashboard, "0.5.2"},
       {:phoenix_live_reload, "1.3.3", only: :dev},
-      {:phoenix_live_view, "0.16.3"},
-      {:plug_cowboy, "2.5.1"},
+      {:phoenix_live_view, "0.16.4"},
+      {:plug_cowboy, "2.5.2"},
       {:postgrex, ">= 0.0.0"},
+      {:swoosh, "1.5.0"},
       {:telemetry_metrics, "0.6.1"},
-      {:telemetry_poller, "0.5.1"}
+      {:telemetry_poller, "1.0.0"}
     ]
   end
 
