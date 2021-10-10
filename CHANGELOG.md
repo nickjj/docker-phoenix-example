@@ -13,6 +13,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `PostgreSQL` to `14.0`
 
+#### Back-end dependencies
+
+- Update `excoveralls` to `0.14.3`
+- Update `phoenix` to `1.6.2`
+- Update `phoenix_live_dashboard` to `0.5.3`
+
 ### Fixed
 
 - `channel_case.ex` had the old `setup tags` code, now it's been updated
