@@ -7,6 +7,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
+### Changed
+
+#### Languages and services
+
+- Update `PostgreSQL` to `14.0`
+
 ### Fixed
 
 - `channel_case.ex` had the old `setup tags` code, now it's been updated
