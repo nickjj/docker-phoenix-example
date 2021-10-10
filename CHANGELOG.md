@@ -19,6 +19,21 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix` to `1.6.2`
 - Update `phoenix_live_dashboard` to `0.5.3`
 
+#### Front-end dependencies
+
+- Update `@babel/core` to `7.15.8`
+- Update `@babel/preset-env` to `7.15.8`
+- Update `autoprefixer` to `10.3.7`
+- Update `css-loader` to `6.4.0`
+- Update `css-minimizer-webpack-plugin` to `3.1.1`
+- Update `mini-css-extract-plugin` to `2.4.2`
+- Update `phoenix_live_view` to `0.16.4`
+- Update `phoenix` to `1.6.2`
+- Update `postcss` to `8.3.9`
+- Update `tailwindcss` to `2.2.16`
+- Update `webpack` to `5.58.1`
+- Update `webpack-cli` to `4.9.0`
+
 ### Fixed
 
 - `channel_case.ex` had the old `setup tags` code, now it's been updated
