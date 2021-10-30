@@ -47,6 +47,12 @@ function secret {
   mix phx.gen.secret
 }
 
+function hadolint {
+  # Lint Dockerfile with hadolint
+  docker container run --rm -i \
+    hadolint/hadolint hadolint --ignore DL3008 "${@}" - < Dockerfile
+}
+
 function format {
   # Run the mix formatter
   mix format
