@@ -75,7 +75,7 @@ EXPOSE 8000
 
 CMD ["iex", "-S", "mix", "phx.server"]
 
-#
+###############################################################################
 
 FROM elixir:1.12.3-slim AS prod
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
