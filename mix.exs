@@ -30,20 +30,20 @@ defmodule Hello.MixProject do
   defp deps do
     [
       {:credo, "1.5.6", only: [:dev, :test], runtime: false},
-      {:ecto_sql, "3.7.0"},
-      {:excoveralls, "0.14.3", only: [:dev, :test]},
+      {:ecto_sql, "3.7.1"},
+      {:excoveralls, "0.14.4", only: [:dev, :test]},
       {:floki, ">= 0.31.0", only: :test},
       {:gettext, "0.18.2"},
       {:jason, "1.2.2"},
       {:phoenix, "1.6.2"},
       {:phoenix_ecto, "4.4.0"},
-      {:phoenix_html, "3.0.4"},
-      {:phoenix_live_dashboard, "0.5.3"},
+      {:phoenix_html, "3.1.0"},
+      {:phoenix_live_dashboard, "0.6.1"},
       {:phoenix_live_reload, "1.3.3", only: :dev},
-      {:phoenix_live_view, "0.16.4"},
+      {:phoenix_live_view, "0.17.5"},
       {:plug_cowboy, "2.5.2"},
       {:postgrex, ">= 0.0.0"},
-      {:swoosh, "1.5.0"},
+      {:swoosh, "1.5.1"},
       {:telemetry_metrics, "0.6.1"},
       {:telemetry_poller, "1.0.0"}
     ]

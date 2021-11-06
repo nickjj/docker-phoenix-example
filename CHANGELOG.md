@@ -20,9 +20,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `excoveralls` to `0.14.3`
-- Update `phoenix` to `1.6.2`
-- Update `phoenix_live_dashboard` to `0.5.3`
+- Update `ecto_sql` to `3.7.1`
+- Update `excoveralls` to `0.14.4`
+- Update `phoenix_html` to `3.1.0`
+- Update `phoenix_live_dashboard` to `0.6.1`
+- Update `phoenix_live_view` to `0.17.5`
+- Update `swoosh` to `1.5.1`
 
 #### Front-end dependencies
 
