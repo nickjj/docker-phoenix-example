@@ -29,7 +29,7 @@ defmodule Hello.MixProject do
 
   defp deps do
     [
-      {:credo, "1.5.6", only: [:dev, :test], runtime: false},
+      {:credo, "1.6.1", only: [:dev, :test], runtime: false},
       {:ecto_sql, "3.7.1"},
       {:excoveralls, "0.14.4", only: [:dev, :test]},
       {:floki, ">= 0.31.0", only: :test},
@@ -43,7 +43,7 @@ defmodule Hello.MixProject do
       {:phoenix_live_view, "0.17.5"},
       {:plug_cowboy, "2.5.2"},
       {:postgrex, ">= 0.0.0"},
-      {:swoosh, "1.5.1"},
+      {:swoosh, "1.5.2"},
       {:telemetry_metrics, "0.6.1"},
       {:telemetry_poller, "1.0.0"}
     ]
