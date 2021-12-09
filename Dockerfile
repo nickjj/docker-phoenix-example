@@ -35,7 +35,7 @@ CMD ["bash"]
 
 ###############################################################################
 
-FROM elixir:1.12.3-slim AS dev
+FROM elixir:1.13.0-slim AS dev
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app
@@ -77,7 +77,7 @@ CMD ["iex", "-S", "mix", "phx.server"]
 
 ###############################################################################
 
-FROM elixir:1.12.3-slim AS prod
+FROM elixir:1.13.0-slim AS prod
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app

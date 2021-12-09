@@ -15,6 +15,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
+- Update `Elixir` to `1.13.0`
 - Update `Node` to `14.18.1`
 - Update `PostgreSQL` to `14.1` and switch to Debian Bullseye Slim
 
@@ -50,7 +51,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 - `channel_case.ex` had the old `setup tags` code, now it's been updated
-- Ensure the prod Elixir Docker build stage is also using Elixir 1.12.3
+- Ensure the prod Elixir Docker build stage is also using Elixir 1.13.0
 
 ## [0.3.0] - 2021-09-25
 

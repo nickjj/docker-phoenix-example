@@ -1,4 +1,4 @@
-use Mix.Config
+import Config
 
 config :hello, HelloWeb.Endpoint,
   debug_errors: true,
