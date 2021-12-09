@@ -24,9 +24,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `credo` to `1.6.1`
 - Update `ecto_sql` to `3.7.1`
 - Update `excoveralls` to `0.14.4`
+- Update `floki` to `0.32.0`
 - Update `phoenix_html` to `3.1.0`
-- Update `phoenix_live_dashboard` to `0.6.1`
+- Update `phoenix_live_dashboard` to `0.6.2`
 - Update `phoenix_live_view` to `0.17.5`
+- Update `phoenix` to `1.6.4`
 - Update `swoosh` to `1.5.2`
 
 #### Front-end dependencies
