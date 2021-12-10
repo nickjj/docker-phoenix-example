@@ -9,6 +9,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- Update `assets/tailwind.config.js` based on the new TailwindCSS v3 defaults
+
 #### Front-end dependencies
 
 - Update `phoenix` to `1.6.4`
