@@ -21,10 +21,18 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `Elixir` to `1.13.1`
 - Update `Node` to `16.13.1`
 
+#### Back-end dependencies
+
+- Update `gettext` to `0.19.0`
+- Update `json` to `1.3.0`
+- Update `phoenix_html` to `3.2.0`
+- Update `phoenix` to `1.6.5`
+
 #### Front-end dependencies
 
 - Update `autoprefixer` to `10.4.0`
-- Update `phoenix` to `1.6.4`
+- Update `phoenix_html` to `3.1.0`
+- Update `phoenix` to `1.6.5`
 - Update `postcss` to `8.4.5`
 - Update `tailwindcss` to `3.0.7`
 

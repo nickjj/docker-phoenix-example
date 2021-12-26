@@ -14,7 +14,7 @@ practices](https://nickjanetakis.com/blog/best-practices-around-production-ready
 based on building and deploying dozens of assorted Dockerized web apps since
 late 2014.
 
-**This app is using Phoenix 1.6.4 and Elixir 1.13.1**. The screenshot doesn't
+**This app is using Phoenix 1.6.5 and Elixir 1.13.1**. The screenshot doesn't
 get updated every time I bump the versions:
 
 [![Screenshot](.github/docs/screenshot.jpg)](https://github.com/nickjj/docker-phoenix-example/blob/main/.github/docs/screenshot.jpg?raw=true)

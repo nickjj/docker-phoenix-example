@@ -663,15 +663,15 @@ path-type@^4.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-4.0.0.tgz#84ed01c0a7ba380afe09d90a8c180dcd9d03043b"
   integrity sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==
 
-phoenix@1.6.4:
-  version "1.6.4"
-  resolved "https://registry.yarnpkg.com/phoenix/-/phoenix-1.6.4.tgz#1bc701cc0a51ca15bc940339233a350839b75826"
-  integrity sha512-RXtt0zmz43pCr6jHqj1djSLcj4UJER2q3JXOKPqQngcmZDNhp+9/YIu/arl93Go+GquI9Lc2kKrPAt112Luwrg==
+phoenix@1.6.5:
+  version "1.6.5"
+  resolved "https://registry.yarnpkg.com/phoenix/-/phoenix-1.6.5.tgz#89f44eef4349d3b87e0ba7b65ed36cba8c9e277a"
+  integrity sha512-Krhx9IwB1Lzj+MqK5bz8CI2ULxjdO63CAjdAZni2lSa1LW3zNflMnsVeQLOu6jz8TDl9wtUKfx3vNSZDAB8jQw==
 
-phoenix_html@2.14.3:
-  version "2.14.3"
-  resolved "https://registry.yarnpkg.com/phoenix_html/-/phoenix_html-2.14.3.tgz#efdbb7554b70a4e04830bb6ca294e15bcfe09de7"
-  integrity sha512-ANd2C2dlqlmTsyudYZlAuwoYs1AUVlrn9Htwz4RqGY+dTAYOvBrfAlodLR2BlK6c+M4Jcaj/LvSbqT5BV+UBYQ==
+phoenix_html@3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/phoenix_html/-/phoenix_html-3.1.0.tgz#735bc270f0ba8b6e6df16b21df3e1d7f51a3541f"
+  integrity sha512-PB41xiF7pDzUSL+iKHI4xvGPLY9tUD2C/BE7oEWcCpt3+wrNweAlhbLk2tzM7uQOTZHMyaTLs1rYytg0t5aJyw==
 
 phoenix_live_view@0.17.5:
   version "0.17.5"
