@@ -1,10 +1,10 @@
-FROM node:14.18.1-bullseye-slim AS webpack
+FROM node:16.13.1-bullseye-slim AS assets
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/assets
 
 RUN apt-get update \
-  && apt-get install -y build-essential --no-install-recommends \
+  && apt-get install -y --no-install-recommends build-essential \
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
   && apt-get clean \
   && mkdir -p /node_modules && chown node:node -R /node_modules /app
@@ -13,25 +13,17 @@ USER node
 
 COPY --chown=node:node assets/package.json assets/*yarn* ./
 
-RUN yarn install
+RUN yarn install && yarn cache clean
 
 ARG NODE_ENV="production"
 ENV NODE_ENV="${NODE_ENV}" \
+    PATH="${PATH}:/node_modules/.bin" \
     USER="node"
 
-COPY --chown=node:node assets .
-
-# We need to copy our web library so that PurgeCSS can find our HTML templates
-# at build time so it knows what to purge / keep in the final CSS bundle.
-#
-# This doesn't bloat anything in the end because only the final assets get
-# copied over in another build stage. Yay for multi-stage builds!
-COPY --chown=node:node lib/hello_web /app/lib/hello_web
+COPY --chown=node:node ../ ../
 
 RUN if [ "${NODE_ENV}" != "development" ]; then \
-  yarn run build; else mkdir -p /app/priv/static; fi
-
-CMD ["bash"]
+  ../run yarn:build:js && ../run yarn:build:css; else mkdir -p /app/priv/static; fi
 
 ###############################################################################
 
@@ -41,7 +33,7 @@ LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 WORKDIR /app
 
 RUN apt-get update \
-  && apt-get install -y build-essential curl inotify-tools --no-install-recommends \
+  && apt-get install -y --no-install-recommends build-essential curl inotify-tools \
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
   && apt-get clean \
   && useradd --create-home elixir \
@@ -62,7 +54,7 @@ RUN if [ "${MIX_ENV}" = "dev" ]; then \
 COPY --chown=elixir:elixir config/config.exs config/"${MIX_ENV}".exs config/
 RUN mix deps.compile
 
-COPY --chown=elixir:elixir --from=webpack /app/priv/static /public
+COPY --chown=elixir:elixir --from=assets /app/priv/static /public
 COPY --chown=elixir:elixir . .
 
 RUN if [ "${MIX_ENV}" != "dev" ]; then \
@@ -83,7 +75,7 @@ LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 WORKDIR /app
 
 RUN apt-get update \
-  && apt-get install -y curl --no-install-recommends \
+  && apt-get install -y --no-install-recommends curl \
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
   && apt-get clean \
   && useradd --create-home elixir \

@@ -46,7 +46,7 @@ out for something else on your own.
 
 ### Front-end
 
-- [Webpack](https://webpack.js.org/)
+- [esbuild](https://esbuild.github.io/)
 - [TailwindCSS](https://tailwindcss.com/)
 - [Heroicons](https://heroicons.com/)
 
@@ -60,14 +60,15 @@ This isn't an exhaustive list but here's a few reasonable choices depending on
 how you're building your app:
 
 - <https://hotwired.dev/>
+- <https://htmx.org/>
 - <https://github.com/alpinejs/alpine>
 - <https://vuejs.org/>
 - <https://reactjs.org/>
 - <https://jquery.com/>
 
-On the bright side with Webpack being set up you can use any (or none) of these
-solutions very easily. You could follow a specific library's Webpack
-installation guides to get up and running in no time.
+Picking a JS library is a very app specific decision because it depends on
+which library you like and it also depends on if your app is going to be
+mostly Jinja templates with sprinkles of JS or an API back-end.
 
 Personally I'm going to be using LiveView with StimulusJS in most newer
 projects.
@@ -100,7 +101,6 @@ worthy additions and changes.
     - An empty `.iex.exs` file has been created so you can customize your IEx sessions however you see fit
     - Both regular and live view flash messages are set up to use a for comprehension
     - CSS, JS and image links are referenced with `Routes.static_url` to support optionally using a CDN
-    - Webpack's watcher is handled by Webpack directly
 - **Front-end assets**:
     - Custom `502.html` and `maintenance.html` pages
     - Generate favicons using modern best practices
@@ -161,9 +161,6 @@ in the `.env` file for the `DOCKER_WEB_PORT_FORWARD` variable to fix this.
 #### Check it out in a browser:
 
 Visit <http://localhost:8000> in your favorite browser.
-
-Not seeing any CSS? That means Webpack is still compiling. Give it
-a few more seconds and reload. It should self resolve.
 
 #### Formatting your code base:
 

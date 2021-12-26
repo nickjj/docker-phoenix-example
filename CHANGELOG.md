@@ -10,13 +10,26 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 
 - Update `assets/tailwind.config.js` based on the new TailwindCSS v3 defaults
+- Replace all traces of Webpack with esbuild
+- Move JS and CSS from `assets/app` to `assets/js` and `assets/css`
+- Rename `webpack` Docker build stage to `assets`
+- Copy all files into the `assets` build stage to simplify things
+- Replace `cp -a` with `cp -r` in Docker entrypoint to make it easier to delete older assets
+
+#### Languages and services
+
+- Update `Node` to `16.13.1`
 
 #### Front-end dependencies
 
+- Update `autoprefixer` to `10.4.0`
 - Update `phoenix` to `1.6.4`
-- Update `postcss` to `8.4.4`
-- Update `tailwindcss` to `3.0.0`
-- Update `webpack` to `5.65.0`
+- Update `postcss` to `8.4.5`
+- Update `tailwindcss` to `3.0.7`
+
+### Removed
+
+- Deleting old assets in the Docker entrypoint (it's best to handle this out of band in a cron job, etc.)
 
 ## [0.4.0] - 2021-12-09
 
