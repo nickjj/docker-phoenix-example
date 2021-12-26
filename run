@@ -47,10 +47,15 @@ function secret {
   mix phx.gen.secret
 }
 
-function hadolint {
-  # Lint Dockerfile with hadolint
+function lint:dockerfile {
+  # Lint Dockerfile
   docker container run --rm -i \
     hadolint/hadolint hadolint --ignore DL3008 "${@}" - < Dockerfile
+}
+
+function lint {
+  # Lint Elixir code
+  mix credo
 }
 
 function format {
@@ -63,33 +68,28 @@ function format:check {
   format --check-formatted
 }
 
-function credo {
-  # Run credo to analyze your code base
-  mix credo
-}
-
 function test {
   # Run test suite
   _dc -e "MIX_ENV=test" web mix test "${@}"
 }
 
-function coveralls {
-  # Get test coverage with coveralls
+function test:coverage {
+  # Get test coverage
   _dc -e "MIX_ENV=test" web mix coveralls "${@}"
 }
 
-function coveralls:detail {
-  # Get test coverage details with coveralls
+function test:coverage:details {
+  # Get test coverage details
   _dc -e "MIX_ENV=test" web mix coveralls.detail "${@}"
 }
 
-function bash {
-  # Start a Bash session in the web container
+function shell {
+  # Start a shell session in the web container
   cmd bash "${@}"
 }
 
 function psql {
-  # Connect to PostgreSQL with psql
+  # Connect to PostgreSQL
   # shellcheck disable=SC1091
   . .env
  _dc postgres psql -U "${POSTGRES_USER}" "${@}"
@@ -166,7 +166,7 @@ function ci:test {
   #   - https://github.com/koalaman/shellcheck
   #   - https://github.com/nickjj/wait-until
   shellcheck run bin/*
-  hadolint "${@}"
+  lint:dockerfile "${@}"
 
   cp --no-clobber .env.example .env
   cp --no-clobber docker-compose.override.yml.example docker-compose.override.yml
@@ -180,6 +180,7 @@ function ci:test {
     -e PGPASSWORD=${POSTGRES_PASSWORD} postgres \
     psql -U ${POSTGRES_USER} ${POSTGRES_USER} -c 'SELECT 1'"
 
+  lint
   format:check
   mix ecto.setup
   test "${@}"

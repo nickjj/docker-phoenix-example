@@ -178,7 +178,7 @@ Visit <http://localhost:8000> in your favorite browser.
 
 ```sh
 # You should get a report back saying there's no issues.
-./run credo
+./run lint
 ```
 
 #### Running the test suite:
@@ -187,8 +187,9 @@ Visit <http://localhost:8000> in your favorite browser.
 # You should see all passing tests. Warnings are typically ok.
 ./run test
 
-# You can also get test coverage by running coveralls.
-./run coveralls
+# You can also get test coverage which uses coveralls.
+./run test:coverage
+./run test:coverage:details
 ```
 
 #### Stopping everything:
@@ -294,7 +295,7 @@ adding custom changes.
 ```sh
 # You can run this from the same terminal as before.
 ./run format
-./run credo
+./run lint
 ./run test
 ```
 
