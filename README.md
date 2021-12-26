@@ -162,7 +162,16 @@ in the `.env` file for the `DOCKER_WEB_PORT_FORWARD` variable to fix this.
 
 Visit <http://localhost:8000> in your favorite browser.
 
-#### Formatting your code base:
+#### Linting the code base:
+
+```sh
+# You should get a report back saying there's no issues.
+./run lint
+```
+
+*We'll go over that ./run script in a bit!*
+
+#### Formatting the code base:
 
 ```sh
 # You can check to see if any code is not formatted correctly.
@@ -170,15 +179,6 @@ Visit <http://localhost:8000> in your favorite browser.
 
 # You can also auto-fix any malformed code (both commands call mix format).
 ./run format
-```
-
-*We'll go over that ./run script in a bit!*
-
-#### Analyzing your code base:
-
-```sh
-# You should get a report back saying there's no issues.
-./run lint
 ```
 
 #### Running the test suite:
@@ -294,8 +294,8 @@ adding custom changes.
 
 ```sh
 # You can run this from the same terminal as before.
-./run format
 ./run lint
+./run format
 ./run test
 ```
 
