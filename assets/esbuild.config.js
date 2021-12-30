@@ -1,9 +1,7 @@
-const fs = require('fs')
-const path = require('path')
 const esbuild = require('esbuild')
+const copyStaticFiles = require('esbuild-copy-static-files')
 
-const copySource = './static'
-const copyDest = '../../'
+const copyDest = '../priv/static'
 
 let minify = false
 let sourcemap = true
@@ -22,24 +20,12 @@ const watch = watch_fs && {
   },
 }
 
-let copy = {
-  name: 'copy',
-  setup(build) {
-    build.onEnd(() => fs.cpSync(copySource, path.join(build.initialOptions.outfile, copyDest), {
-      recursive: true,
-      force: true,
-      dereference: true,
-      preserveTimestamps: true,
-    }))
-  },
-}
-
 esbuild.build({
   entryPoints: ['./js/app.js'],
-  outfile: '../priv/static/js/app.js',
+  outfile: `${copyDest}/js/app.js`,
   bundle: true,
   minify: minify,
   sourcemap: sourcemap,
-  watch: watch,
-  plugins: [copy],
+  watch: watch_fs,
+  plugins: [copyStaticFiles({dest: copyDest})]
 })
