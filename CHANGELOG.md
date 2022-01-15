@@ -17,6 +17,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `phoenix` to `1.6.6`
 
+#### Front-end dependencies
+
+- Update `autoprefixer` to `10.4.2`
+- Update `esbuild` to `0.14.11`
+- Update `phoenix` to `1.6.6`
+- Update `tailwindcss` to `3.0.15`
+
 ## [0.5.0] - 2021-12-26
 
 ### Changed
