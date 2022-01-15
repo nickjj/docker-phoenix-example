@@ -11,6 +11,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - [esbuild-copy-static-files](https://github.com/nickjj/esbuild-copy-static-files) plugin to drastically improve Phoenix Live Reload (check the `esbuild.config.js` file)
 
+### Changed
+
+#### Back-end dependencies
+
+- Update `phoenix` to `1.6.6`
+
 ## [0.5.0] - 2021-12-26
 
 ### Changed
