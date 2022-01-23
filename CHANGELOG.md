@@ -13,6 +13,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+#### Languages and services
+
+- Update `Elixir` to `1.13.2`
+- Update `Node` to `16.13.2`
+
 #### Back-end dependencies
 
 - Update `phoenix` to `1.6.6`

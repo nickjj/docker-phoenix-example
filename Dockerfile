@@ -1,4 +1,4 @@
-FROM node:16.13.1-bullseye-slim AS assets
+FROM node:16.13.2-bullseye-slim AS assets
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/assets
@@ -27,7 +27,7 @@ RUN if [ "${NODE_ENV}" != "development" ]; then \
 
 ###############################################################################
 
-FROM elixir:1.13.1-slim AS dev
+FROM elixir:1.13.2-slim AS dev
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app
@@ -69,7 +69,7 @@ CMD ["iex", "-S", "mix", "phx.server"]
 
 ###############################################################################
 
-FROM elixir:1.13.1-slim AS prod
+FROM elixir:1.13.2-slim AS prod
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app
