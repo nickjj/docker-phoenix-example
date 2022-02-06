@@ -35,6 +35,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix` to `1.6.6`
 - Update `tailwindcss` to `3.0.15`
 
+### Fixed
+
+- `COPY --chown=node:node ../ ../` has been fixed to be `COPY --chown=node:node . ..`
+
 ## [0.5.0] - 2021-12-26
 
 ### Changed
