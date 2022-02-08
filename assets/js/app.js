@@ -13,7 +13,7 @@ topbar.config({barColors: {0: "#29d"}, shadowColor: "rgba(0, 0, 0, .3)"})
 
 window.addEventListener("phx:page-loading-start", (info) => {
   if(!topBarScheduled) {
-    topBarScheduled = setTimeout(() => topbar.show(), 1)
+    topBarScheduled = setTimeout(() => topbar.show(), 500)
   }
 })
 window.addEventListener("phx:page-loading-stop", (info) => {
