@@ -13,6 +13,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- Only show Topbar if a response takes longer than 500ms to load in `assets/js/app.js`
+
 #### Languages and services
 
 - Update `Elixir` to `1.13.2`
