@@ -53,6 +53,7 @@ find . -type f -exec \
   && mv lib/"${FIND_APP_NAME}"_web.ex lib/"${APP_NAME}"_web.ex \
   && mv lib/"${FIND_APP_NAME}" lib/"${APP_NAME}" \
   && mv lib/"${FIND_APP_NAME}"_web lib/"${APP_NAME}"_web \
+  && mv test/"${FIND_APP_NAME}" test/"${APP_NAME}" 2> /dev/null || true \
   && mv test/"${FIND_APP_NAME}"_web test/"${APP_NAME}"_web
 # -----------------------------------------------------------------------------
 

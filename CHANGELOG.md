@@ -40,6 +40,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Fixed
 
 - `COPY --chown=node:node ../ ../` has been fixed to be `COPY --chown=node:node . ..`
+- Ensure the `rename-project` script renames your project after adding custom non-web tests
 
 ## [0.5.0] - 2021-12-26
 
