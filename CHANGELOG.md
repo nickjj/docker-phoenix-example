@@ -18,7 +18,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 #### Languages and services
 
 - Update `Elixir` to `1.13.3`
-- Update `Node` to `16.13.2`
+- Update `Node` to `16.14.0`
 
 #### Back-end dependencies
 
