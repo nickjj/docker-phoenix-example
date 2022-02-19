@@ -19,6 +19,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `Elixir` to `1.13.3`
 - Update `Node` to `16.14.0`
+- Update `PostgreSQL` to `14.2`
 
 #### Back-end dependencies
 
