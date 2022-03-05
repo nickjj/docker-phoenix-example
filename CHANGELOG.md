@@ -14,6 +14,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 ### Changed
 
 - Only show Topbar if a response takes longer than 500ms to load in `assets/js/app.js`
+- Refactor `/up/` endpoint into its own controller and add `/up/databases` as a second URL
 
 #### Languages and services
 

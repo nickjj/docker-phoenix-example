@@ -18,7 +18,8 @@ defmodule HelloWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
-    get "/up", PageController, :up
+    get "/up/", UpController, :index
+    get "/up/databases", UpController, :databases
   end
 
   # Enables LiveDashboard only for development.

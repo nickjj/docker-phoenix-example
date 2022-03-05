@@ -87,7 +87,8 @@ worthy additions and changes.
     - *[credo](https://github.com/rrrene/credo)* helps create more consistent code
     - *[excoveralls](https://github.com/parroty/excoveralls)* for getting detailed test coverge reports
 - **Controllers**:
-    - Add `page` controller to render a `/` page and `/up` health check endpoint
+    - Add `page` controller to render a home page
+    - Add `up` controller with 2 health check related actions
 - **Views**:
     - Add `view_helpers` to store shared view helpers (such as the `flash_class` function that's included)
 - **Config**:
