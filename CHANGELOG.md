@@ -36,11 +36,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Front-end dependencies
 
-- Update `autoprefixer` to `10.4.2`
-- Update `esbuild` to `0.14.25`
+- Update `autoprefixer` to `10.4.4`
+- Update `esbuild` to `0.14.27`
 - Update `phoenix_live_view` to `0.17.7`
 - Update `phoenix` to `1.6.6`
-- Update `postcss` to `8.4.7`
+- Update `postcss` to `8.4.12`
 - Update `tailwindcss` to `3.0.23`
 
 ### Fixed
