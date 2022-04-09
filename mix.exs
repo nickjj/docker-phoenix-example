@@ -40,10 +40,10 @@ defmodule Hello.MixProject do
       {:phoenix_html, "3.2.0"},
       {:phoenix_live_dashboard, "0.6.5"},
       {:phoenix_live_reload, "1.3.3", only: :dev},
-      {:phoenix_live_view, "0.17.7"},
+      {:phoenix_live_view, "0.17.9"},
       {:plug_cowboy, "2.5.2"},
       {:postgrex, "0.16.2"},
-      {:swoosh, "1.6.3"},
+      {:swoosh, "1.6.4"},
       {:telemetry_metrics, "0.6.1"},
       {:telemetry_poller, "1.0.0"}
     ]
