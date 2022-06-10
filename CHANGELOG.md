@@ -20,6 +20,14 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix_live_view` to `0.17.10`
 - Update `swoosh` to `1.7.1`
 
+#### Front-end dependencies
+
+- Update `esbuild` to `0.14.43`
+- Update `phoenix_live_view` to `0.17.10`
+- Update `phoenix` to `1.6.10`
+- Update `postcss` to `8.4.14`
+- Update `tailwindcss` to `3.1.2`
+
 ## [0.6.0] - 2022-05-15
 
 ### Added
