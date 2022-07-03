@@ -11,6 +11,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
+- Update `Node` to `16.15.1`
 - Update `PostgreSQL` to `14.4`
 
 #### Back-end dependencies

@@ -1,4 +1,5 @@
-FROM node:16.14.2-bullseye-slim AS assets
+FROM node:16.15.1-bullseye-slim AS assets
+
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/assets
