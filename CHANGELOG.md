@@ -11,7 +11,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
-- Update `PostgreSQL` to `14.3`
+- Update `PostgreSQL` to `14.4`
 
 #### Back-end dependencies
 
