@@ -34,6 +34,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `postcss` to `8.4.16`
 - Update `tailwindcss` to `3.1.8`
 
+## Removed
+
+- Deleted `:gettext` in `compilers` in `mix.exs` (this was a new compiler warning)
+
 ## [0.6.0] - 2022-05-15
 
 ### Added
