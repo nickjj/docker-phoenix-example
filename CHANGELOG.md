@@ -13,6 +13,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- Switch Docker Compose `env_file` to `environment` for `postgres` to avoid needless recreates on `.env` changes
+
 #### Languages and services
 
 - Update `Node` to `16.15.1`
