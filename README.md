@@ -120,6 +120,12 @@ Docker and want to learn it in detail check out the [additional resources
 links](#learn-more-about-docker-and-phoenix) near the bottom of this
 README.
 
+You'll also need to enable Docker Compose v2 support if you're using Docker
+Desktop. On native Linux without Docker Desktop you can [install it as a plugin
+to Docker](https://docs.docker.com/compose/install/linux/). It's been generally
+available for a while now and very stable. This project uses a specific Docker
+Compose profiles feature that only works with Docker Compose v2.
+
 If you're using Windows, it will be expected that you're following along inside
 of [WSL or WSL
 2](https://nickjanetakis.com/blog/a-linux-dev-environment-on-windows-with-wsl-2-docker-desktop-and-more).
@@ -148,8 +154,7 @@ internet connection speed and computer's hardware specs. That's because it's
 going to download a few Docker images and build the Elixir + Yarn dependencies.*
 
 ```sh
-# Using Docker Compose v2 instead? It's all good, run `docker compose` instead!
-docker-compose up --build
+docker compose up --build
 ```
 
 Now that everything is built and running we can treat it like any other Phoenix
@@ -197,10 +202,10 @@ Visit <http://localhost:8000> in your favorite browser.
 
 ```sh
 # Stop the containers and remove a few Docker related resources associated to this project.
-docker-compose down
+docker compose down
 ```
 
-You can start things up again with `docker-compose up` and unlike the first
+You can start things up again with `docker compose up` and unlike the first
 time it should only take seconds.
 
 ## Files of interest
@@ -285,7 +290,7 @@ files and then renaming a few directories and files.
 This won't take as long as before because Docker can re-use most things.
 
 ```sh
-docker-compose up --build
+docker compose up --build
 ```
 
 #### Sanity check to make sure everything is formatted and the tests still pass:
@@ -327,7 +332,7 @@ Let's say you've customized your app and it's time to make a change to your
 
 Without Docker you'd normally run `mix deps.get` or `yarn install`. With Docker
 it's basically the same thing and since these commands are in our `Dockerfile`
-we can get away with doing a `docker-compose build` but don't run that just
+we can get away with doing a `docker compose build` but don't run that just
 yet.
 
 #### In development:
@@ -348,7 +353,7 @@ what these commands do in more detail.
 
 #### In CI:
 
-You'll want to run `docker-compose build` since it will use any existing lock
+You'll want to run `docker compose build` since it will use any existing lock
 files if they exist. You can also check out the complete CI test pipeline in
 the [run](https://github.com/nickjj/docker-phoenix-example/blob/main/run) file
 under the `ci:test` function.
@@ -357,7 +362,7 @@ under the `ci:test` function.
 
 This is usually a non-issue since you'll be pulling down pre-built images from
 a Docker registry but if you decide to build your Docker images directly on
-your server you could run `docker-compose build` as part of your deploy
+your server you could run `docker compose build` as part of your deploy
 pipeline.
 
 ## See a way to improve something?
