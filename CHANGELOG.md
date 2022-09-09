@@ -26,14 +26,15 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `credo` to `1.6.6`
+- Update `credo` to `1.6.7`
 - Update `ecto_sql` to `3.8.3`
 - Update `excoveralls` to `0.14.6`
+- Update `floki` to `0.33.X`
 - Update `gettext` to `0.20.0`
 - Update `phoenix_live_view` to `0.17.11`
-- Update `phoenix` to `1.6.11`
+- Update `phoenix` to `1.6.12`
 - Update `postgrex` to `0.16.4`
-- Update `swoosh` to `1.7.4`
+- Update `swoosh` to `1.8.0`
 
 #### Front-end dependencies
 
