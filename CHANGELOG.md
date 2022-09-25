@@ -11,6 +11,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Reference `PORT` variable in the `docker-compose.yml` web service instead of hard coding `8000`
 
+#### Back-end dependencies
+
+- Update `jason` to `1.4.0`
+- Update `phoenix_live_dashboard` to `0.7.0`
+- Update `phoenix_live_view` to `0.18.0`
+- Update `postgrex` to `0.16.5`
+
 ## [0.7.0] - 2022-09-09
 
 ### Added
