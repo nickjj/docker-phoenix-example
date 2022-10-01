@@ -4,10 +4,14 @@ LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app/assets
 
+ARG UID=1000
+ARG GID=1000
+
 RUN apt-get update \
   && apt-get install -y --no-install-recommends build-essential \
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
   && apt-get clean \
+  && groupmod -g "${GID}" node && usermod -u "${UID}" -g "${GID}" node \
   && mkdir -p /node_modules && chown node:node -R /node_modules /app
 
 USER node
@@ -33,11 +37,15 @@ LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app
 
+ARG UID=1000
+ARG GID=1000
+
 RUN apt-get update \
   && apt-get install -y --no-install-recommends build-essential curl inotify-tools \
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
   && apt-get clean \
-  && useradd --create-home elixir \
+  && groupadd -g "${GID}" elixir \
+  && useradd --create-home --no-log-init -u "${UID}" -g "${GID}" elixir \
   && mkdir -p /mix && chown elixir:elixir -R /mix /app
 
 USER elixir
@@ -75,11 +83,15 @@ LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app
 
+ARG UID=1000
+ARG GID=1000
+
 RUN apt-get update \
   && apt-get install -y --no-install-recommends curl \
   && rm -rf /var/lib/apt/lists/* /usr/share/doc /usr/share/man \
   && apt-get clean \
-  && useradd --create-home elixir \
+  && groupadd -g "${GID}" elixir \
+  && useradd --create-home --no-log-init -u "${UID}" -g "${GID}" elixir \
   && chown elixir:elixir -R /app
 
 USER elixir
