@@ -1,4 +1,4 @@
-FROM node:16.15.1-bullseye-slim AS assets
+FROM node:18.10.0-bullseye-slim AS assets
 
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 

@@ -15,6 +15,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Reference `PORT` variable in the `docker-compose.yml` web service instead of hard coding `8000`
 
+#### Languages and services
+
+- Update `Node` to `18.10.0`
+
 #### Back-end dependencies
 
 - Update `jason` to `1.4.0`
