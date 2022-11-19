@@ -30,9 +30,9 @@ defmodule Hello.MixProject do
   defp deps do
     [
       {:credo, "1.6.7", only: [:dev, :test], runtime: false},
-      {:ecto_sql, "3.9.0"},
+      {:ecto_sql, "3.9.1"},
       {:excoveralls, "0.15.0", only: [:dev, :test]},
-      {:floki, ">= 0.33.0", only: :test},
+      {:floki, ">= 0.34.0", only: :test},
       {:gettext, "0.20.0"},
       {:jason, "1.4.0"},
       {:phoenix, "1.6.15"},
@@ -41,7 +41,7 @@ defmodule Hello.MixProject do
       {:phoenix_live_dashboard, "0.7.2"},
       {:phoenix_live_reload, "1.4.0", only: :dev},
       {:phoenix_live_view, "0.18.3"},
-      {:plug_cowboy, "2.5.2"},
+      {:plug_cowboy, "2.6.0"},
       {:postgrex, "0.16.5"},
       {:swoosh, "1.8.2"},
       {:telemetry_metrics, "0.6.1"},
