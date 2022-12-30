@@ -25,7 +25,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `ecto_sql` to `3.9.1`
+- Update `ecto_sql` to `3.9.2`
 - Update `excoveralls` to `0.15.1`
 - Update `floki` to `0.34.0`
 - Update `jason` to `1.4.0`
@@ -35,7 +35,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix` to `1.6.15`
 - Update `plug_cowboy` to `2.6.0`
 - Update `postgrex` to `0.16.5`
-- Update `swoosh` to `1.8.3`
+- Update `swoosh` to `1.9.1`
 
 #### Front-end dependencies
 
