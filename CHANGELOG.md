@@ -26,12 +26,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 #### Back-end dependencies
 
 - Update `ecto_sql` to `3.9.2`
-- Update `excoveralls` to `0.15.1`
+- Update `excoveralls` to `0.15.2`
 - Update `floki` to `0.34.0`
+- Update `gettext` to `0.21.0`
 - Update `jason` to `1.4.0`
 - Update `phoenix_live_dashboard` to `0.7.2`
 - Update `phoenix_live_reload` to `1.4.1`
-- Update `phoenix_live_view` to `0.18.3`
+- Update `phoenix_live_view` to `0.18.7`
 - Update `phoenix` to `1.6.15`
 - Update `plug_cowboy` to `2.6.0`
 - Update `postgrex` to `0.16.5`
