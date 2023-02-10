@@ -16,6 +16,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Reference `PORT` variable in the `docker-compose.yml` web service instead of hard coding `8000`
 - Adjust Hadolint to exit > 0 if any style warnings are present
+- Rename `esbuild.config.js` to `esbuild.config.mjs` and refactor config for esbuild 0.17+
 
 #### Languages and services
 
@@ -41,7 +42,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 #### Front-end dependencies
 
 - Update `autoprefixer` to `10.4.13`
-- Update `esbuild` to `0.16.17`
+- Update `esbuild` to `0.17.7`
 - Update `phoenix_html` to `3.2.0`
 - Update `phoenix_live_view` to `0.18.11`
 - Update `phoenix` to `1.6.15`
