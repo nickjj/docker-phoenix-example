@@ -12,12 +12,17 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Ability to customize `UID` and `GID` if you're not using `1000:1000` (check the `.env.example` file)
 - Output `docker compose logs` in CI for easier debugging
 
+#### Back-end dependencies
+
+- Add `heroicons`
+
 ### Changed
 
 - Reference `PORT` variable in the `docker-compose.yml` web service instead of hard coding `8000`
 - Adjust Hadolint to exit > 0 if any style warnings are present
 - Rename `esbuild.config.js` to `esbuild.config.mjs` and refactor config for esbuild 0.17+
 - Adjust `assets/js/app.js` to use topbar 2.X
+- Tons of file changes for upgrading from Phoenix 1.6 to 1.7
 
 #### Languages and services
 
@@ -35,8 +40,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix_html` to `3.3.0`
 - Update `phoenix_live_dashboard` to `0.7.2`
 - Update `phoenix_live_reload` to `1.4.1`
-- Update `phoenix_live_view` to `0.18.14`
-- Update `phoenix` to `1.6.15`
+- Update `phoenix_live_view` to `0.18.16`
+- Update `phoenix` to `1.7.0`
 - Update `plug_cowboy` to `2.6.0`
 - Update `postgrex` to `0.16.5`
 - Update `swoosh` to `1.9.1`
@@ -45,9 +50,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `autoprefixer` to `10.4.13`
 - Update `esbuild` to `0.17.8`
-- Update `phoenix_html` to `3.2.0`
-- Update `phoenix_live_view` to `0.18.14`
-- Update `phoenix` to `1.6.15`
+- Update `phoenix_html` to `3.3.0`
+- Update `phoenix_live_view` to `0.18.16`
+- Update `phoenix` to `1.7.0`
 - Update `postcss-import` to `15.1.0`
 - Update `postcss` to `8.4.21`
 - Update `tailwindcss` to `3.2.6`

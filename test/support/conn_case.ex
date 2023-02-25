@@ -19,13 +19,14 @@ defmodule HelloWeb.ConnCase do
 
   using do
     quote do
+      # The default endpoint for testing
+      @endpoint HelloWeb.Endpoint
+
+      use HelloWeb, :verified_routes
+
       import Plug.Conn
       import Phoenix.ConnTest
       import HelloWeb.ConnCase
-
-      alias HelloWeb.Router.Helpers, as: Routes
-
-      @endpoint HelloWeb.Endpoint
     end
   end
 

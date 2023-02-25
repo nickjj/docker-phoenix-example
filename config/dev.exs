@@ -9,10 +9,11 @@ config :hello, HelloWeb.Endpoint,
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/hello_web/(live|views)/.*(ex)$",
-      ~r"lib/hello_web/templates/.*(eex)$"
+      ~r"lib/hello_web/(controllers|live|components)/.*(ex|heex)$"
     ]
   ]
+
+config :hello, dev_routes: true
 
 config :hello, Hello.Repo, show_sensitive_data_on_connection_error: true
 

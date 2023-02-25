@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <.live_title><%= assigns[:page_title] || "Docker + Phoenix" %></.live_title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="csrf-token" content={get_csrf_token()} />
+    <meta
+      name="description"
+      content="A production ready example Phoenix app that's using Docker and Docker Compose."
+    />
+
+    <link phx-track-static rel="stylesheet" href={url(~p"/css/app.css")} />
+    <script
+      defer
+      phx-track-static
+      type="text/javascript"
+      src={url(~p"/js/app.js")}
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href={url(~p"/apple-touch-icon.png")}
+    />
+    <link
+      rel="mask-icon"
+      href={url(~p"/safari-pinned-tab.svg")}
+      color="#384051"
+    />
+    <link rel="manifest" href={url(~p"/manifest.json")} />
+  </head>
+  <body class="flex flex-col h-screen justify-between">
+    <div class="bg-gray-700">
+      <div class="max-w-screen-lg mx-auto py-3 px-3 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between flex-wrap">
+          <div class="flex-1 flex items-center">
+            <span class="flex p-2 rounded-lg bg-gray-900">
+              <Heroicons.information_circle class="w-6 h-6 text-white" />
+            </span>
+            <p class="ml-3 font-medium text-white truncate">
+              Phoenix <%= @phoenix_ver %> and Elixir <%= @elixir_ver %>
+            </p>
+          </div>
+          <div class="mt-2 order-3 w-full sm:mt-0 sm:w-auto">
+            <div class="rounded-md shadow-sm">
+              <span class="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-500">
+                RUN_MODE = <%= @run_mode %>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="max-w-screen-lg mx-auto mb-auto">
+      <%= @inner_content %>
+    </main>
+
+    <footer class="text-center mt-6 pb-6 h-10">
+      <p class="text-gray-500">
+        Coded with
+        <Heroicons.heart class="h-5 w-5 text-red-600 inline" stroke-width="2" />
+        by
+        <a class="border-b mb-1" href="https://nickjanetakis.com">
+          Nick Janetakis
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

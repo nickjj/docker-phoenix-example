@@ -14,7 +14,7 @@ practices](https://nickjanetakis.com/blog/best-practices-around-production-ready
 based on building and deploying dozens of assorted Dockerized web apps since
 late 2014.
 
-**This app is using Phoenix 1.6.15 and Elixir 1.14.3**. The screenshot doesn't
+**This app is using Phoenix 1.7.0 and Elixir 1.14.3**. The screenshot doesn't
 get updated every time I bump the versions:
 
 [![Screenshot](.github/docs/screenshot.jpg)](https://github.com/nickjj/docker-phoenix-example/blob/main/.github/docs/screenshot.jpg?raw=true)
@@ -89,8 +89,6 @@ worthy additions and changes.
 - **Controllers**:
     - Add `page` controller to render a home page
     - Add `up` controller with 2 health check related actions
-- **Views**:
-    - Add `view_helpers` to store shared view helpers (such as the `flash_class` function that's included)
 - **Config**:
     - Extract a bunch of configuration settings into environment variables
     - The `.env` file stores all environment variables
@@ -100,8 +98,7 @@ worthy additions and changes.
     - A `lib/hello/release.ex` module has been added to run migrations with releases
     - `.formatter.exs` has been configured to use 80 character line lengths
     - An empty `.iex.exs` file has been created so you can customize your IEx sessions however you see fit
-    - Both regular and live view flash messages are set up to use a for comprehension
-    - CSS, JS and image links are referenced with `Routes.static_url` to support optionally using a CDN
+    - CSS, JS and image links are referenced with `url(p"...")` to support optionally using a CDN
 - **Front-end assets**:
     - Custom `502.html` and `maintenance.html` pages
     - Generate favicons using modern best practices

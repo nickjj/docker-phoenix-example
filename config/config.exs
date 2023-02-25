@@ -13,11 +13,11 @@ config :hello, HelloWeb.Endpoint,
   # configured with an environment variable and it's in the runtime.exs config.
   http: [ip: {0, 0, 0, 0, 0, 0, 0, 0}],
   render_errors: [
-    view: HelloWeb.ErrorView,
-    accepts: ~w(html json),
+    formats: [html: HelloWeb.ErrorHTML, json: HelloWeb.ErrorJSON],
     layout: false
   ],
-  pubsub_server: Hello.PubSub
+  pubsub_server: Hello.PubSub,
+  live_view: [signing_salt: "aC4Hk8o2"]
 
 config :hello, Hello.Repo, adapter: Ecto.Adapters.Postgres
 
@@ -28,6 +28,7 @@ config :logger, :console,
 config :phoenix, :json_library, Jason
 
 config :hello, Hello.Mailer, adapter: Swoosh.Adapters.Local
+
 config :swoosh, :api_client, false
 
 import_config "#{Mix.env()}.exs"

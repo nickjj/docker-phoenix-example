@@ -20,10 +20,7 @@ defmodule HelloWeb.Endpoint do
     at: "/",
     from: :hello,
     gzip: false,
-    only_matching:
-      ~w(css fonts images js favicon robots.txt 502.html maintenance.html
-        apple-touch android-chrome browserconfig manifest mstile
-        safari-pinned-tab)
+    only: HelloWeb.static_paths()
 
   if code_reloading? do
     socket "/phoenix/live_reload/socket", Phoenix.LiveReloader.Socket

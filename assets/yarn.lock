@@ -471,20 +471,20 @@ path-parse@^1.0.6, path-parse@^1.0.7:
   resolved "https://registry.yarnpkg.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
   integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
 
-phoenix@1.6.15:
-  version "1.6.15"
-  resolved "https://registry.yarnpkg.com/phoenix/-/phoenix-1.6.15.tgz#efb2088a310cde333b3762002831b79dedf76002"
-  integrity sha512-O6AG5jTkZOOkdd/GOSCsM4v3bzBoyRnC5bEi57KhX/Daba6FvnBRzt0nhEeRRiVQGLSxDlyb0dUe9CkYWMZd8g==
+phoenix@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/phoenix/-/phoenix-1.7.0.tgz#ef85fe5236b9d9847c722cb89cbc589ab9c37d19"
+  integrity sha512-SflR4DUBid/tVjqihy6Amn/Xwm2lXHTa6hsjptmfDoa991XG/f2hdf/aTtmz89NNtkAWuy8vbC1Aix/N2KWcsg==
 
-phoenix_html@3.2.0:
-  version "3.2.0"
-  resolved "https://registry.yarnpkg.com/phoenix_html/-/phoenix_html-3.2.0.tgz#4a30e5c331a72abababa1f3b81a9fe2c0e5a43d7"
-  integrity sha512-zv7PIZk0MPkF0ax8n465Q6w86+sGAy5cTem6KcbkUbdgxGc0y3WZmzkM2bSlYdSGbLEZfjXxos1G72xXsha6xA==
+phoenix_html@3.3.0:
+  version "3.3.0"
+  resolved "https://registry.yarnpkg.com/phoenix_html/-/phoenix_html-3.3.0.tgz#75862f2270b8e6da3b5e528512a1a64de92f7874"
+  integrity sha512-Q/X9UhxQLMYOuA8cXrDSH7PWTK/+vCpX+rtSheoNaPb/qDVoi+R3GPYKgL9CJ06+VWhcC3kkZ05O/RVsby7m6A==
 
-phoenix_live_view@0.18.14:
-  version "0.18.14"
-  resolved "https://registry.yarnpkg.com/phoenix_live_view/-/phoenix_live_view-0.18.14.tgz#f51941b9d9adbd0a2cdaa12d6f026a9da2efbb62"
-  integrity sha512-28ad9Cdet9h9FuLumNhFeFe+Fe6iqwfwk3lIGLdRpbcG8TlqtEb0VKC2WqZBKlNV4bEpPjYQRrCueNO3UFPcKA==
+phoenix_live_view@0.18.16:
+  version "0.18.16"
+  resolved "https://registry.yarnpkg.com/phoenix_live_view/-/phoenix_live_view-0.18.16.tgz#88f5a18c9b523e3138d192297b0ca0ea6a59d449"
+  integrity sha512-Nttq6JcHJnhM5Yfrz7XRxrJGlI8O6Umc9JVW1h9CRF9PnP+mlhcWrlosqPK/nYQbiA6PVxjJ/1vcafDiZniq7A==
 
 picocolors@^1.0.0:
   version "1.0.0"

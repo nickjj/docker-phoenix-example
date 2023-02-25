@@ -17,48 +17,10 @@ defmodule HelloWeb do
   and import those modules here.
   """
 
-  def controller do
-    quote do
-      use Phoenix.Controller, namespace: HelloWeb
-
-      import Plug.Conn
-      import HelloWeb.Gettext
-      alias HelloWeb.Router.Helpers, as: Routes
-    end
-  end
-
-  def view do
-    quote do
-      use Phoenix.View,
-        root: "lib/hello_web/templates",
-        namespace: HelloWeb
-
-      import Phoenix.Controller,
-        only: [get_flash: 1, get_flash: 2, view_module: 1, view_template: 1]
-
-      unquote(view_helpers())
-
-      # Application specific.
-      alias HelloWeb.ViewHelpers
-    end
-  end
-
-  def live_view do
-    quote do
-      use Phoenix.LiveView,
-        layout: {HelloWeb.LayoutView, "live.html"}
-
-      unquote(view_helpers())
-    end
-  end
-
-  def live_component do
-    quote do
-      use Phoenix.LiveComponent
-
-      unquote(view_helpers())
-    end
-  end
+  def static_paths,
+    do: ~w(css fonts images js favicon robots.txt 502.html maintenance.html
+        apple-touch android-chrome browserconfig manifest.json mstile
+        safari-pinned-tab.svg)
 
   def router do
     quote do
@@ -77,17 +39,71 @@ defmodule HelloWeb do
     end
   end
 
-  defp view_helpers do
+  def controller do
     quote do
-      use Phoenix.HTML
+      use Phoenix.Controller,
+        formats: [:html, :json],
+        layouts: [html: HelloWeb.Layouts]
 
-      import Phoenix.LiveView.Helpers
-
-      import Phoenix.View
-
-      import HelloWeb.ErrorHelpers
+      import Plug.Conn
       import HelloWeb.Gettext
-      alias HelloWeb.Router.Helpers, as: Routes
+
+      unquote(verified_routes())
+    end
+  end
+
+  def live_view do
+    quote do
+      use Phoenix.LiveView,
+        layout: {HelloWeb.Layouts, :app}
+
+      unquote(html_helpers())
+    end
+  end
+
+  def live_component do
+    quote do
+      use Phoenix.LiveComponent
+
+      unquote(html_helpers())
+    end
+  end
+
+  def html do
+    quote do
+      use Phoenix.Component
+
+      # Import convenience functions from controllers
+      import Phoenix.Controller,
+        only: [get_csrf_token: 0, view_module: 1, view_template: 1]
+
+      # Include general helpers for rendering HTML
+      unquote(html_helpers())
+    end
+  end
+
+  defp html_helpers do
+    quote do
+      # HTML escaping functionality
+      import Phoenix.HTML
+      # Core UI components and translation
+      import HelloWeb.CoreComponents
+      import HelloWeb.Gettext
+
+      # Shortcut for generating JS commands
+      alias Phoenix.LiveView.JS
+
+      # Routes generation with the ~p sigil
+      unquote(verified_routes())
+    end
+  end
+
+  def verified_routes do
+    quote do
+      use Phoenix.VerifiedRoutes,
+        endpoint: HelloWeb.Endpoint,
+        router: HelloWeb.Router,
+        statics: HelloWeb.static_paths()
     end
   end
 
