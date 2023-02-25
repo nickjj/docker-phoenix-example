@@ -98,7 +98,7 @@ worthy additions and changes.
     - A `lib/hello/release.ex` module has been added to run migrations with releases
     - `.formatter.exs` has been configured to use 80 character line lengths
     - An empty `.iex.exs` file has been created so you can customize your IEx sessions however you see fit
-    - CSS, JS and image links are referenced with `url(p"...")` to support optionally using a CDN
+    - CSS, JS and image links are referenced with `url(~p"...")` to support optionally using a CDN
 - **Front-end assets**:
     - Custom `502.html` and `maintenance.html` pages
     - Generate favicons using modern best practices
