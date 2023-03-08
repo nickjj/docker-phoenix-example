@@ -11,6 +11,15 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Nothing yet!
 
+### Changed
+
+#### Back-end dependencies
+
+- Update `excoveralls` to `0.16.0`
+- Update `gettext` to `0.22.1`
+- Update `phoenix_html` to `3.3.1`
+- Update `phoenix` to `1.7.1`
+
 ## [0.8.0] - 2023-02-25
 
 ### Added
