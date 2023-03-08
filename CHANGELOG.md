@@ -20,6 +20,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix_html` to `3.3.1`
 - Update `phoenix` to `1.7.1`
 
+#### Front-end dependencies
+
+- Update `esbuild` to `0.17.11`
+- Update `phoenix` to `1.7.1`
+- Update `tailwindcss` to `3.2.7`
+
 ## [0.8.0] - 2023-02-25
 
 ### Added
