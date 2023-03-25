@@ -7,10 +7,6 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## [Unreleased]
 
-### Added
-
-- Nothing yet!
-
 ### Changed
 
 #### Languages and services
