@@ -13,6 +13,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+#### Languages and services
+
+- Update `Node` to `18.15.0`
+
 #### Back-end dependencies
 
 - Update `excoveralls` to `0.16.0`
