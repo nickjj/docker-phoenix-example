@@ -19,10 +19,14 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
+- Update `credo` to `1.7.0`
 - Update `excoveralls` to `0.16.0`
+- Update `finch` to `0.15.0`
 - Update `gettext` to `0.22.1`
 - Update `phoenix_html` to `3.3.1`
-- Update `phoenix` to `1.7.1`
+- Update `phoenix_live_view` to `0.18.18`
+- Update `phoenix` to `1.7.2`
+- Update `plug_cowboy` to `2.6.1`
 
 #### Front-end dependencies
 
