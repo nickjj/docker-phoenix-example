@@ -26,6 +26,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix` to `1.7.2`
 - Update `plug_cowboy` to `2.6.1`
 - Update `postgrex` to `0.17.1`
+- Update `swoosh` to `1.10.2`
 
 #### Front-end dependencies
 
