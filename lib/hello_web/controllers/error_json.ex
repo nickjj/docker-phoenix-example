@@ -1,4 +1,3 @@
-
 defmodule HelloWeb.ErrorJSON do
   @moduledoc """
   If you want to customize a particular status code,
