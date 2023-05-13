@@ -21,6 +21,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `ecto_sql` to `3.10.1`
 - Update `excoveralls` to `0.16.1`
 - Update `finch` to `0.16.0`
+- Update `floki` to `0.34.2`
 - Update `gettext` to `0.22.1`
 - Update `phoenix_html` to `3.3.1`
 - Update `phoenix_live_view` to `0.18.18`

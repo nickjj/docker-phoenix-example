@@ -32,7 +32,7 @@ defmodule Hello.MixProject do
       {:ecto_sql, "3.10.1"},
       {:excoveralls, "0.16.1", only: [:dev, :test]},
       {:finch, "0.16.0"},
-      {:floki, ">= 0.34.0", only: :test},
+      {:floki, ">= 0.34.2", only: :test},
       {:gettext, "0.22.1"},
       {:heroicons, "0.5.2"},
       {:jason, "1.4.0"},
