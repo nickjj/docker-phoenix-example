@@ -37,14 +37,14 @@ defmodule Hello.MixProject do
       {:heroicons, "0.5.2"},
       {:jason, "1.4.0"},
       {:phoenix, "1.7.2"},
-      {:phoenix_ecto, "4.4.0"},
+      {:phoenix_ecto, "4.4.1"},
       {:phoenix_html, "3.3.1"},
       {:phoenix_live_dashboard, "0.7.2"},
       {:phoenix_live_reload, "1.4.1", only: :dev},
       {:phoenix_live_view, "0.18.18"},
       {:plug_cowboy, "2.6.1"},
       {:postgrex, "0.17.1"},
-      {:swoosh, "1.10.2"},
+      {:swoosh, "1.11.0"},
       {:telemetry_metrics, "0.6.1"},
       {:telemetry_poller, "1.0.0"}
     ]

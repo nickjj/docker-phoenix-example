@@ -23,12 +23,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `finch` to `0.16.0`
 - Update `floki` to `0.34.2`
 - Update `gettext` to `0.22.1`
+- Update `phoenix_ecto` to `4.4.1`
 - Update `phoenix_html` to `3.3.1`
 - Update `phoenix_live_view` to `0.18.18`
 - Update `phoenix` to `1.7.2`
 - Update `plug_cowboy` to `2.6.1`
 - Update `postgrex` to `0.17.1`
-- Update `swoosh` to `1.10.2`
+- Update `swoosh` to `1.11.0`
 
 #### Front-end dependencies
 
