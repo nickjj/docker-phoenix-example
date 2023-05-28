@@ -38,7 +38,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix_html` to `3.3.1`
 - Update `phoenix_live_view` to `0.18.18`
 - Update `phoenix` to `1.7.2`
-- Update `postcss` to `8.4.23`
+- Update `postcss` to `8.4.24`
 - Update `tailwindcss` to `3.3.2`
 
 ## [0.8.0] - 2023-02-25
