@@ -18,7 +18,7 @@ defmodule HelloWeb do
   """
 
   def static_paths,
-    do: ~w(css fonts images js favicon robots.txt 502.html maintenance.html
+    do: ~w(css fonts images js favicon.ico robots.txt 502.html maintenance.html
         apple-touch android-chrome browserconfig manifest.json mstile
         safari-pinned-tab.svg)
 
