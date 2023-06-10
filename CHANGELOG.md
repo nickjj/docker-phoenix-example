@@ -9,6 +9,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ### Changed
 
+- Various optional env vars in `config/runtime.exs` have defaults added to them
+
 #### Languages and services
 
 - Update `Elixir` to `1.14.4`
