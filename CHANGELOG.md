@@ -22,16 +22,16 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `excoveralls` to `0.16.1`
 - Update `finch` to `0.16.0`
 - Update `floki` to `0.34.2`
-- Update `gettext` to `0.22.1`
+- Update `gettext` to `0.22.2`
 - Update `heroicons` to `0.5.3`
-- Update `phoenix_ecto` to `4.4.1`
+- Update `phoenix_ecto` to `4.4.2`
 - Update `phoenix_html` to `3.3.1`
 - Update `phoenix_live_dashboard` to `0.8.0`
-- Update `phoenix_live_view` to `0.19.0`
-- Update `phoenix` to `1.7.2`
+- Update `phoenix_live_view` to `0.19.1`
+- Update `phoenix` to `1.7.3`
 - Update `plug_cowboy` to `2.6.1`
 - Update `postgrex` to `0.17.1`
-- Update `swoosh` to `1.11.0`
+- Update `swoosh` to `1.11.1`
 
 #### Front-end dependencies
 
