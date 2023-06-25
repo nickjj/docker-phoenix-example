@@ -36,15 +36,15 @@ defmodule Hello.MixProject do
       {:gettext, "0.22.2"},
       {:heroicons, "0.5.3"},
       {:jason, "1.4.0"},
-      {:phoenix, "1.7.3"},
+      {:phoenix, "1.7.6"},
       {:phoenix_ecto, "4.4.2"},
       {:phoenix_html, "3.3.1"},
       {:phoenix_live_dashboard, "0.8.0"},
       {:phoenix_live_reload, "1.4.1", only: :dev},
-      {:phoenix_live_view, "0.19.1"},
+      {:phoenix_live_view, "0.19.3"},
       {:plug_cowboy, "2.6.1"},
       {:postgrex, "0.17.1"},
-      {:swoosh, "1.11.1"},
+      {:swoosh, "1.11.2"},
       {:telemetry_metrics, "0.6.1"},
       {:telemetry_poller, "1.0.0"}
     ]
