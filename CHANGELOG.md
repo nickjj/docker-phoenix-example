@@ -13,7 +13,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
-- Update `Elixir` to `1.15.0`
+- Update `Elixir` to `1.15.1`
 - Update `Node` to `18.15.0`
 - Update `Postgres` to `15.3`
 
