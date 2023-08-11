@@ -8,7 +8,9 @@ x-app: &default-app
       - "MIX_ENV=${MIX_ENV:-prod}"
       - "NODE_ENV=${NODE_ENV:-production}"
   depends_on:
-    - "postgres"
+    postgres:
+      condition: "service_started"
+      required: false
   env_file:
     - ".env"
   restart: "${DOCKER_RESTART_POLICY:-unless-stopped}"
