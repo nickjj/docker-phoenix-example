@@ -42,7 +42,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `autoprefixer` to `10.4.15`
 - Update `esbuild` to `0.19.2`
-- Update `phoenix_html` to `3.3.1`
+- Update `phoenix_html` to `3.3.2`
 - Update `phoenix_live_view` to `0.19.5`
 - Update `phoenix` to `1.7.7`
 - Update `postcss` to `8.4.29`
