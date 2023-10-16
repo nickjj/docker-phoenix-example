@@ -29,6 +29,7 @@ defmodule Hello.MixProject do
   defp deps do
     [
       {:credo, "1.7.1", only: [:dev, :test], runtime: false},
+      {:dns_cluster, "~> 0.1.1"},
       {:ecto_sql, "3.10.2"},
       {:excoveralls, "0.18.0", only: [:dev, :test]},
       {:finch, "0.16.0"},

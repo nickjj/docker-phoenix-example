@@ -6,12 +6,14 @@
 import Config
 
 config :hello,
-  ecto_repos: [Hello.Repo]
+  ecto_repos: [Hello.Repo],
+  generators: [timestamp_type: :utc_datetime]
 
 config :hello, HelloWeb.Endpoint,
   # Enable both ipv4 and ipv6 on all interfaces. By the way, the port is
   # configured with an environment variable and it's in the runtime.exs config.
   http: [ip: {0, 0, 0, 0, 0, 0, 0, 0}],
+  adapter: Phoenix.Endpoint.Cowboy2Adapter,
   render_errors: [
     formats: [html: HelloWeb.ErrorHTML, json: HelloWeb.ErrorJSON],
     layout: false

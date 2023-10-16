@@ -6,9 +6,11 @@ defmodule Hello.Application do
   @impl true
   def start(_type, _args) do
     children = [
-      Hello.Repo,
       HelloWeb.Telemetry,
+      Hello.Repo,
+      {DNSCluster, query: Application.get_env(:hello, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Hello.PubSub},
+      {Finch, name: Hello.Finch},
       HelloWeb.Endpoint
       # Start a worker by calling: Hello.Worker.start_link(arg)
       # {Hello.Worker, arg}

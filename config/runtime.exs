@@ -2,6 +2,8 @@ import Config
 
 url_host = System.fetch_env!("URL_HOST")
 
+config :hello, :dns_cluster_query, System.get_env("DNS_CLUSTER_QUERY")
+
 config :hello, HelloWeb.Endpoint,
   url: [
     scheme: System.get_env("URL_SCHEME", "https"),
