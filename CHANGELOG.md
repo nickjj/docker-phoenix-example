@@ -20,23 +20,23 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `credo` to `1.7.0`
+- Update `credo` to `1.7.1`
 - Update `ecto_sql` to `3.10.2`
-- Update `excoveralls` to `0.17.1`
+- Update `excoveralls` to `0.18.0`
 - Update `finch` to `0.16.0`
 - Update `floki` to `0.34.3`
 - Update `gettext` to `0.23.1`
 - Update `heroicons` to `0.5.3`
 - Update `jason` to `1.4.1`
 - Update `phoenix_ecto` to `4.4.2`
-- Update `phoenix_html` to `3.3.2`
-- Update `phoenix_live_dashboard` to `0.8.1`
-- Update `phoenix_live_view` to `0.19.5`
-- Update `phoenix` to `1.7.7`
+- Update `phoenix_html` to `3.3.3`
+- Update `phoenix_live_dashboard` to `0.8.2`
+- Update `phoenix_live_view` to `0.20.1`
+- Update `phoenix` to `1.7.9`
 - Update `plug_cowboy` to `2.6.1`
 - Update `postgrex` to `0.17.2`
 - Update `postgrex` to `0.17.3`
-- Update `swoosh` to `1.11.6`
+- Update `swoosh` to `1.12.0`
 
 #### Front-end dependencies
 
