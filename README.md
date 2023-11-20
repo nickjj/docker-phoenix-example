@@ -1,7 +1,7 @@
-# An example Phoenix + Docker app
+# An example Phoenix + Docker app and This is read me
 
 ![CI](https://github.com/nickjj/docker-phoenix-example/workflows/CI/badge.svg?branch=main)
-This is read me
+
 You could use this example app as a base for your new project or as a guide to
 Dockerize your existing Phoenix app.
 
