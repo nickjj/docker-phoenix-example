@@ -1,7 +1,7 @@
 # An example Phoenix + Docker app
 
 ![CI](https://github.com/nickjj/docker-phoenix-example/workflows/CI/badge.svg?branch=main)
-
+This is read me
 You could use this example app as a base for your new project or as a guide to
 Dockerize your existing Phoenix app.
 
@@ -80,28 +80,28 @@ find in most apps I'm adding the same things over and over. Here's a few note
 worthy additions and changes.
 
 - **Mix and releases**:
-    - When `MIX_ENV` is set to `dev` then the server will be run with mix
-    - When `MIX_ENV` is set to `prod` a release will be built and used to run your server
-    - All of this is automated through a multi-stage Dockerfile and build ARGs
+  - When `MIX_ENV` is set to `dev` then the server will be run with mix
+  - When `MIX_ENV` is set to `prod` a release will be built and used to run your server
+  - All of this is automated through a multi-stage Dockerfile and build ARGs
 - **Static analysis and testing**:
-    - *[credo](https://github.com/rrrene/credo)* helps create more consistent code
-    - *[excoveralls](https://github.com/parroty/excoveralls)* for getting detailed test coverge reports
+  - _[credo](https://github.com/rrrene/credo)_ helps create more consistent code
+  - _[excoveralls](https://github.com/parroty/excoveralls)_ for getting detailed test coverge reports
 - **Controllers**:
-    - Add `page` controller to render a home page
-    - Add `up` controller with 2 health check related actions
+  - Add `page` controller to render a home page
+  - Add `up` controller with 2 health check related actions
 - **Config**:
-    - Extract a bunch of configuration settings into environment variables
-    - The `.env` file stores all environment variables
-    - Put all config settings with environment variables in `config/runtime.exs` (works with releases)
+  - Extract a bunch of configuration settings into environment variables
+  - The `.env` file stores all environment variables
+  - Put all config settings with environment variables in `config/runtime.exs` (works with releases)
 - **Phoenix defaults that are changed**:
-    - Cookies are encrypted
-    - A `lib/hello/release.ex` module has been added to run migrations with releases
-    - `.formatter.exs` has been configured to use 80 character line lengths
-    - An empty `.iex.exs` file has been created so you can customize your IEx sessions however you see fit
-    - CSS, JS and image links are referenced with `url(~p"...")` to support optionally using a CDN
+  - Cookies are encrypted
+  - A `lib/hello/release.ex` module has been added to run migrations with releases
+  - `.formatter.exs` has been configured to use 80 character line lengths
+  - An empty `.iex.exs` file has been created so you can customize your IEx sessions however you see fit
+  - CSS, JS and image links are referenced with `url(~p"...")` to support optionally using a CDN
 - **Front-end assets**:
-    - Custom `502.html` and `maintenance.html` pages
-    - Generate favicons using modern best practices
+  - Custom `502.html` and `maintenance.html` pages
+  - Generate favicons using modern best practices
 
 Besides the Elixir / Phoenix app itself:
 
@@ -148,9 +148,9 @@ cp .env.example .env
 
 #### Build everything:
 
-*The first time you run this it's going to take 5-10 minutes depending on your
+_The first time you run this it's going to take 5-10 minutes depending on your
 internet connection speed and computer's hardware specs. That's because it's
-going to download a few Docker images and build the Elixir + Yarn dependencies.*
+going to download a few Docker images and build the Elixir + Yarn dependencies._
 
 ```sh
 docker compose up --build
@@ -183,7 +183,7 @@ Visit <http://localhost:8000> in your favorite browser.
 ./run lint
 ```
 
-*We'll go over that ./run script in a bit!*
+_We'll go over that ./run script in a bit!_
 
 #### Formatting the code base:
 
@@ -249,9 +249,9 @@ This comes in handy to run various Docker commands because sometimes these
 commands can be a bit long to type. Feel free to add as many convenience
 functions as you want. This file's purpose is to make your experience better!
 
-*If you get tired of typing `./run` you can always create a shell alias with
+_If you get tired of typing `./run` you can always create a shell alias with
 `alias run=./run` in your `~/.bash_aliases` or equivalent file. Then you'll be
-able to run `run` instead of `./run`.*
+able to run `run` instead of `./run`._
 
 ## Running a script to automate renaming the project
 
@@ -283,9 +283,9 @@ is going to:
 - Perform a number of find / replace actions
 - Optionally initialize a new git repo for you
 
-*Afterwards you can delete this script because its only purpose is to assist in
+_Afterwards you can delete this script because its only purpose is to assist in
 helping you change this project's name without depending on any complicated
-project generator tools or 3rd party dependencies.*
+project generator tools or 3rd party dependencies._
 
 If you're not comfy running the script or it doesn't work for whatever reasons
 you can [check it
@@ -386,7 +386,7 @@ a couple of free and paid resources. There's Google too!
 
 ### Learn more about Docker and Phoenix
 
-#### Official documentation 
+#### Official documentation
 
 - <https://docs.docker.com/>
 - <https://hexdocs.pm/phoenix/Phoenix.html>
