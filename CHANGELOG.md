@@ -23,7 +23,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `credo` to `1.7.3`
 - Update `ecto_sql` to `3.11.1`
 - Update `excoveralls` to `0.18.0`
-- Update `finch` to `0.16.0`
+- Update `finch` to `0.17.0`
 - Update `floki` to `0.35.2`
 - Update `gettext` to `0.24.0`
 - Update `heroicons` to `0.5.3`
@@ -35,7 +35,8 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix` to `1.7.10`
 - Update `plug_cowboy` to `2.6.1`
 - Update `postgrex` to `0.17.4`
-- Update `swoosh` to `1.14.3`
+- Update `swoosh` to `1.14.4`
+- Update `telemetry_metrics` to `0.6.2`
 
 #### Front-end dependencies
 

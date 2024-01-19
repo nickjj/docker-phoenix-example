@@ -32,7 +32,7 @@ defmodule Hello.MixProject do
       {:dns_cluster, "~> 0.1.1"},
       {:ecto_sql, "3.11.1"},
       {:excoveralls, "0.18.0", only: [:dev, :test]},
-      {:finch, "0.16.0"},
+      {:finch, "0.17.0"},
       {:floki, ">= 0.34.3", only: :test},
       {:gettext, "0.24.0"},
       {:heroicons, "0.5.3"},
@@ -45,8 +45,8 @@ defmodule Hello.MixProject do
       {:phoenix_live_view, "0.20.3"},
       {:plug_cowboy, "2.6.1"},
       {:postgrex, "0.17.4"},
-      {:swoosh, "1.14.3"},
-      {:telemetry_metrics, "0.6.1"},
+      {:swoosh, "1.14.4"},
+      {:telemetry_metrics, "0.6.2"},
       {:telemetry_poller, "1.0.0"}
     ]
   end
