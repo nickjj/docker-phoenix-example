@@ -217,23 +217,26 @@ defmodule HelloWeb.CoreComponents do
       <.flash_group flash={@flash} />
   """
   attr :flash, :map, required: true, doc: "the map of flash messages"
-  attr :id, :string, default: "flash-group", doc: "the optional id of flash container"
+
+  attr :id, :string,
+    default: "flash-group",
+    doc: "the optional id of flash container"
 
   def flash_group(assigns) do
     ~H"""
     <div id={@id}>
-      <.flash kind={:info} title="Success!" flash={@flash} />
-      <.flash kind={:error} title="Error!" flash={@flash} />
+      <.flash kind={:info} title={gettext("Success!")} flash={@flash} />
+      <.flash kind={:error} title={gettext("Error!")} flash={@flash} />
       <.flash
-        id="disconnected"
+        id="client-error"
         kind={:error}
-        title="We can't find the internet"
+        title={gettext("We can't find the internet")}
         close={false}
-        autoshow={false}
         phx-disconnected={show("#disconnected")}
         phx-connected={hide("#disconnected")}
+        hidden
       >
-        Attempting to reconnect
+        <%= gettext("Attempting to reconnect") %>
         <Heroicons.arrow_path class="ml-1 w-3 h-3 inline animate-spin" />
       </.flash>
     </div>

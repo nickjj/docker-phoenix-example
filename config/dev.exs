@@ -7,7 +7,7 @@ config :hello, HelloWeb.Endpoint,
   watchers: [],
   live_reload: [
     patterns: [
-      ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
+      ~r"priv/static/(?!uploads/).*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
       ~r"lib/hello_web/(controllers|live|components)/.*(ex|heex)$"
     ]

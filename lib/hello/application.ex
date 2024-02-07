@@ -8,7 +8,8 @@ defmodule Hello.Application do
     children = [
       HelloWeb.Telemetry,
       Hello.Repo,
-      {DNSCluster, query: Application.get_env(:hello, :dns_cluster_query) || :ignore},
+      {DNSCluster,
+       query: Application.get_env(:hello, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Hello.PubSub},
       {Finch, name: Hello.Finch},
       HelloWeb.Endpoint

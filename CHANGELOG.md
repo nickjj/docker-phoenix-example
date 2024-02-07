@@ -20,6 +20,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
+- Update `bandit` to `1.2.0`
 - Update `credo` to `1.7.3`
 - Update `ecto_sql` to `3.11.1`
 - Update `excoveralls` to `0.18.0`
@@ -32,10 +33,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix_html` to `4.0.0`
 - Update `phoenix_live_dashboard` to `0.8.3`
 - Update `phoenix_live_view` to `0.20.3`
-- Update `phoenix` to `1.7.10`
-- Update `plug_cowboy` to `2.6.1`
+- Update `phoenix_live_view` to `0.20.4`
+- Update `phoenix` to `1.7.11`
 - Update `postgrex` to `0.17.4`
-- Update `swoosh` to `1.14.4`
+- Update `swoosh` to `1.15.2`
 - Update `telemetry_metrics` to `0.6.2`
 
 #### Front-end dependencies
