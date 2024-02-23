@@ -32,7 +32,7 @@ RUN if [ "${NODE_ENV}" != "development" ]; then \
 
 ###############################################################################
 
-FROM elixir:1.16.0-slim AS dev
+FROM elixir:1.16.1-slim AS dev
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app
@@ -78,7 +78,7 @@ CMD ["iex", "-S", "mix", "phx.server"]
 
 ###############################################################################
 
-FROM elixir:1.16.0-slim AS prod
+FROM elixir:1.16.1-slim AS prod
 LABEL maintainer="Nick Janetakis <nick.janetakis@gmail.com>"
 
 WORKDIR /app
