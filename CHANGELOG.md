@@ -20,32 +20,32 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `bandit` to `1.2.2`
+- Update `bandit` to `1.3.0`
 - Update `credo` to `1.7.5`
 - Update `dns_cluster` to `0.1.3`
 - Update `ecto_sql` to `3.11.1`
 - Update `excoveralls` to `0.18.0`
 - Update `finch` to `0.18.0`
-- Update `floki` to `0.35.4`
+- Update `floki` to `0.36.0`
 - Update `gettext` to `0.24.0`
 - Update `heroicons` to `0.5.3`
 - Update `jason` to `1.4.1`
-- Update `phoenix_ecto` to `4.4.3`
-- Update `phoenix_html` to `4.0.0`
+- Update `phoenix_ecto` to `4.5.1`
+- Update `phoenix_html` to `4.1.1`
 - Update `phoenix_live_dashboard` to `0.8.3`
-- Update `phoenix_live_view` to `0.20.3`
-- Update `phoenix_live_view` to `0.20.9`
+- Update `phoenix_live_reload` to `1.5.2`
+- Update `phoenix_live_view` to `0.20.12`
 - Update `phoenix` to `1.7.11`
-- Update `postgrex` to `0.17.4`
-- Update `swoosh` to `1.15.2`
+- Update `postgrex` to `0.17.5`
+- Update `swoosh` to `1.15.3`
 - Update `telemetry_metrics` to `0.6.2`
 
 #### Front-end dependencies
 
-- Update `autoprefixer` to `10.4.17`
+- Update `autoprefixer` to `10.4.18`
 - Update `esbuild` to `0.20.1`
 - Update `phoenix_html` to `4.0.0`
-- Update `phoenix_live_view` to `0.20.9`
+- Update `phoenix_live_view` to `0.20.12`
 - Update `phoenix` to `1.7.11`
 - Update `postcss-import` to `16.0.1`
 - Update `postcss` to `8.4.35`
