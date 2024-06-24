@@ -20,12 +20,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `bandit` to `1.5.2`
 - Update `bandit` to `1.5.5`
-- Update `credo` to `1.7.6`
 - Update `credo` to `1.7.7`
 - Update `dns_cluster` to `0.1.3`
-- Update `ecto_sql` to `3.11.2`
 - Update `ecto_sql` to `3.11.3`
 - Update `excoveralls` to `0.18.1`
 - Update `finch` to `0.18.0`
@@ -35,12 +32,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `jason` to `1.4.1`
 - Update `phoenix_ecto` to `4.6.1`
 - Update `phoenix_html` to `4.1.1`
-- Update `phoenix_live_dashboard` to `0.8.3`
 - Update `phoenix_live_dashboard` to `0.8.4`
 - Update `phoenix_live_reload` to `1.5.3`
-- Update `phoenix_live_view` to `0.20.14`
 - Update `phoenix_live_view` to `0.20.17`
-- Update `phoenix` to `1.7.12`
 - Update `phoenix` to `1.7.14`
 - Update `postgrex` to `0.18.0`
 - Update `swoosh` to `1.16.9`
@@ -50,10 +44,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 #### Front-end dependencies
 
 - Update `autoprefixer` to `10.4.19`
-- Update `esbuild` to `0.21.4`
+- Update `esbuild` to `0.21.5`
 - Update `phoenix_html` to `4.0.0`
 - Update `phoenix_live_view` to `0.20.14`
-- Update `phoenix` to `1.7.12`
+- Update `phoenix` to `1.7.14`
 - Update `postcss-import` to `16.1.0`
 - Update `postcss` to `8.4.38`
 - Update `tailwindcss` to `3.4.4`

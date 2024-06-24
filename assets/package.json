@@ -2,14 +2,14 @@
   "name": "hello",
   "private": true,
   "dependencies": {
-    "phoenix": "1.7.12",
+    "phoenix": "1.7.14",
     "phoenix_html": "4.0.0",
     "phoenix_live_view": "0.20.14",
     "topbar": "3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "10.4.19",
-    "esbuild": "0.21.4",
+    "esbuild": "0.21.5",
     "esbuild-copy-static-files": "0.1.0",
     "postcss": "8.4.38",
     "postcss-import": "16.1.0",
