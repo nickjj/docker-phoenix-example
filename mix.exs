@@ -37,15 +37,15 @@ defmodule Hello.MixProject do
       {:floki, "0.36.2", only: :test},
       {:gettext, "0.24.0"},
       {:heroicons, "0.5.5"},
-      {:jason, "1.4.1"},
+      {:jason, "1.4.3"},
       {:phoenix, "1.7.14"},
-      {:phoenix_ecto, "4.6.1"},
+      {:phoenix_ecto, "4.6.2"},
       {:phoenix_html, "4.1.1"},
       {:phoenix_live_dashboard, "0.8.4"},
       {:phoenix_live_reload, "1.5.3", only: :dev},
       {:phoenix_live_view, "0.20.17"},
       {:postgrex, "0.18.0"},
-      {:swoosh, "1.16.9"},
+      {:swoosh, "1.16.10"},
       {:telemetry_metrics, "1.0.0"},
       {:telemetry_poller, "1.1.0"}
     ]
