@@ -20,23 +20,23 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `bandit` to `1.5.5`
+- Update `bandit` to `1.5.7`
 - Update `credo` to `1.7.7`
 - Update `dns_cluster` to `0.1.3`
 - Update `ecto_sql` to `3.11.3`
-- Update `excoveralls` to `0.18.1`
+- Update `excoveralls` to `0.18.2`
 - Update `finch` to `0.18.0`
 - Update `floki` to `0.36.2`
-- Update `gettext` to `0.24.0`
+- Update `gettext` to `0.25.0`
 - Update `heroicons` to `0.5.5`
-- Update `jason` to `1.4.3`
+- Update `jason` to `1.4.4`
 - Update `phoenix_ecto` to `4.6.2`
 - Update `phoenix_html` to `4.1.1`
 - Update `phoenix_live_dashboard` to `0.8.4`
 - Update `phoenix_live_reload` to `1.5.3`
 - Update `phoenix_live_view` to `0.20.17`
 - Update `phoenix` to `1.7.14`
-- Update `postgrex` to `0.18.0`
+- Update `postgrex` to `0.19.0`
 - Update `swoosh` to `1.16.10`
 - Update `telemetry_metrics` to `1.0.0`
 - Update `telemetry_poller` to `1.1.0`

@@ -28,23 +28,23 @@ defmodule Hello.MixProject do
 
   defp deps do
     [
-      {:bandit, "1.5.5"},
+      {:bandit, "1.5.7"},
       {:credo, "1.7.7", only: [:dev, :test], runtime: false},
       {:dns_cluster, "~> 0.1.3"},
       {:ecto_sql, "3.11.3"},
-      {:excoveralls, "0.18.1", only: [:dev, :test]},
+      {:excoveralls, "0.18.2", only: [:dev, :test]},
       {:finch, "0.18.0"},
       {:floki, "0.36.2", only: :test},
-      {:gettext, "0.24.0"},
+      {:gettext, "0.25.0"},
       {:heroicons, "0.5.5"},
-      {:jason, "1.4.3"},
+      {:jason, "1.4.4"},
       {:phoenix, "1.7.14"},
       {:phoenix_ecto, "4.6.2"},
       {:phoenix_html, "4.1.1"},
       {:phoenix_live_dashboard, "0.8.4"},
       {:phoenix_live_reload, "1.5.3", only: :dev},
       {:phoenix_live_view, "0.20.17"},
-      {:postgrex, "0.18.0"},
+      {:postgrex, "0.19.0"},
       {:swoosh, "1.16.10"},
       {:telemetry_metrics, "1.0.0"},
       {:telemetry_poller, "1.1.0"}
