@@ -11,6 +11,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Various optional env vars in `config/runtime.exs` have defaults added to them
 - Add `required: false` to `depends_on` in `docker-compose.yml` (requires Docker Compose v2.20.2+)
+- Rename `docker-compose.yml` to `compose.yaml` to stick to the official Docker Compose spec
 
 #### Languages and services
 
