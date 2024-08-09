@@ -137,7 +137,7 @@ these commands for PowerShell if you want.
 git clone https://github.com/nickjj/docker-phoenix-example hellophoenix
 cd hellophoenix
 
-# Optionally checkout a specific tag, such as: git checkout 0.8.0
+# Optionally checkout a specific tag, such as: git checkout 0.9.0
 ```
 
 #### Copy an example .env file because the real one is git ignored:
@@ -386,7 +386,7 @@ a couple of free and paid resources. There's Google too!
 
 ### Learn more about Docker and Phoenix
 
-#### Official documentation 
+#### Official documentation
 
 - <https://docs.docker.com/>
 - <https://hexdocs.pm/phoenix/Phoenix.html>
