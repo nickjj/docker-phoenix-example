@@ -11,6 +11,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Languages and services
 
+- Update `Elixir` to `1.17.2`
 - Update `Postgres` to `16.4`
 
 ## [0.9.0] - 2024-08-09
