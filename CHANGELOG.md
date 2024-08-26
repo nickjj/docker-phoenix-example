@@ -22,6 +22,11 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `postgrex` to `0.19.1`
 - Update `swoosh` to `1.16.12`
 
+#### Front-end dependencies
+
+- Update `esbuild` to `0.23.1`
+- Update `tailwindcss` to `3.4.10`
+
 ## [0.9.0] - 2024-08-09
 
 ### Changed
