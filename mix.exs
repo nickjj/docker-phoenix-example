@@ -32,8 +32,8 @@ defmodule Hello.MixProject do
       {:credo, "1.7.7", only: [:dev, :test], runtime: false},
       {:dns_cluster, "~> 0.1.3"},
       {:ecto_sql, "3.12.0"},
-      {:excoveralls, "0.18.2", only: [:dev, :test]},
-      {:finch, "0.18.0"},
+      {:excoveralls, "0.18.3", only: [:dev, :test]},
+      {:finch, "0.19.0"},
       {:floki, "0.36.2", only: :test},
       {:gettext, "0.26.1"},
       {:heroicons, "0.5.6"},
@@ -45,7 +45,7 @@ defmodule Hello.MixProject do
       {:phoenix_live_reload, "1.5.3", only: :dev},
       {:phoenix_live_view, "0.20.17"},
       {:postgrex, "0.19.1"},
-      {:swoosh, "1.16.12"},
+      {:swoosh, "1.17.1"},
       {:telemetry_metrics, "1.0.0"},
       {:telemetry_poller, "1.1.0"}
     ]
