@@ -16,13 +16,14 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `ecto_sql` to `3.12.0`
+- Update `credo` to `1.7.8`
+- Update `ecto_sql` to `3.12.1`
 - Update `excoveralls` to `0.18.3`
 - Update `finch` to `0.19.0`
 - Update `gettext` to `0.26.1`
 - Update `heroicons` to `0.5.6`
 - Update `postgrex` to `0.19.1`
-- Update `swoosh` to `1.17.1`
+- Update `swoosh` to `1.17.2`
 
 #### Front-end dependencies
 
