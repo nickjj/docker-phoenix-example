@@ -343,6 +343,9 @@ it's basically the same thing and since these commands are in our `Dockerfile`
 we can get away with doing a `docker compose build` but don't run that just
 yet.
 
+You can also access `mix` and `yarn` in Docker with `./run mix` and `./run
+yarn` after you've upped the project.
+
 #### In development:
 
 You can run `./run mix:outdated` or `./run yarn:outdated` to get a list of
@@ -350,10 +353,13 @@ outdated dependencies based on what you currently have installed. Once you've
 figured out what you want to update, go make those updates in your `mix.exs`
 and / or `assets/package.json` file.
 
-Then to update your dependencies you can run `./run mix:install` or `./run
-yarn:install`. That'll make sure any lock files get copied from Docker's image
-(thanks to volumes) into your code repo and now you can commit those files to
-version control like usual.
+Then to update your dependencies you can run `./run deps:install`. This will
+build a new image with any new dependencies and also make sure any lock file
+updates get copied from your image into your code repo and now you can commit
+those files to version control like usual.
+
+Also, you can run `./run deps:install --no-build` to only copy lock file
+updates without re-building an image.
 
 You can check out the
 [run](https://github.com/nickjj/docker-phoenix-example/blob/main/run) file to see
