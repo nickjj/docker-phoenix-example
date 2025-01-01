@@ -3,16 +3,16 @@
   "private": true,
   "dependencies": {
     "phoenix": "1.7.18",
-    "phoenix_html": "4.0.0",
-    "phoenix_live_view": "1.0.0",
+    "phoenix_html": "4.2.0",
+    "phoenix_live_view": "1.0.1",
     "topbar": "3.0.0"
   },
   "devDependencies": {
     "autoprefixer": "10.4.20",
-    "esbuild": "0.24.0",
+    "esbuild": "0.24.2",
     "esbuild-copy-static-files": "0.1.0",
     "postcss": "8.4.49",
     "postcss-import": "16.1.0",
-    "tailwindcss": "3.4.16"
+    "tailwindcss": "3.4.17"
   }
 }
