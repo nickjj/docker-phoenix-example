@@ -48,8 +48,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix_html` to `4.2.0`
 - Update `phoenix_live_view` to `1.0.2`
 - Update `phoenix` to `1.7.18`
-- Update `postcss` to `8.5.1`
-- Update `tailwindcss` to `3.4.17`
+- Update `tailwindcss` to `4.0.0`
+- Update `@tailwindcss/cli` to `4.0.0`
+- Update `@tailwindcss/postcss` to `4.0.0`
 
 ## [0.9.0] - 2024-08-09
 

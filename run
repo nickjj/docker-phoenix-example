@@ -138,7 +138,7 @@ function yarn:build:css {
   fi
 
   mkdir -p ../priv/static/css
-  tailwindcss --postcss -i css/app.css -o ../priv/static/css/app.css "${args[@]}"
+  tailwindcss -i css/app.css -o ../priv/static/css/app.css "${args[@]}"
 }
 
 function prod:migrate {
