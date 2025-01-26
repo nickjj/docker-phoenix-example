@@ -26,10 +26,10 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Back-end dependencies
 
-- Update `bandit` to `1.6.4`
+- Update `bandit` to `1.6.6`
 - Update `credo` to `1.7.11`
 - Update `ecto_sql` to `3.12.1`
-- Update `excoveralls` to `0.18.3`
+- Update `excoveralls` to `0.18.5`
 - Update `finch` to `0.19.0`
 - Update `floki` to `0.37.0`
 - Update `gettext` to `0.26.2`
@@ -41,6 +41,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix` to `1.7.18`
 - Update `postgrex` to `0.19.3`
 - Update `swoosh` to `1.17.6`
+- Update `telemetry_metrics` to `1.1.0`
 
 #### Front-end dependencies
 
