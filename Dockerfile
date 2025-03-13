@@ -22,8 +22,8 @@ RUN yarn install && yarn cache clean
 
 ARG NODE_ENV="production"
 ENV NODE_ENV="${NODE_ENV}" \
-    PATH="${PATH}:/node_modules/.bin" \
-    USER="node"
+  PATH="${PATH}:/node_modules/.bin" \
+  USER="node"
 
 COPY --chown=node:node . ..
 
@@ -54,7 +54,7 @@ RUN mix local.hex --force && mix local.rebar --force
 
 ARG MIX_ENV="prod"
 ENV MIX_ENV="${MIX_ENV}" \
-    USER="elixir"
+  USER="elixir"
 
 COPY --chown=elixir:elixir mix.* ./
 RUN if [ "${MIX_ENV}" = "dev" ]; then \
@@ -68,7 +68,7 @@ COPY --chown=elixir:elixir . .
 
 RUN if [ "${MIX_ENV}" != "dev" ]; then \
   ln -s /public /app/priv/static \
-    && mix phx.digest && mix release && rm -rf /app/priv/static; fi
+  && mix phx.digest && mix release && rm -rf /app/priv/static; fi
 
 ENTRYPOINT ["/app/bin/docker-entrypoint-web"]
 
