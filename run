@@ -16,86 +16,82 @@ fi
 # Helper functions start with _ and aren't listed in this script's help menu.
 # -----------------------------------------------------------------------------
 
-function _dc {
+_dc() {
+  # shellcheck disable=SC2086
   docker compose "${DC}" ${TTY} "${@}"
 }
 
-function _dc_run {
+_dc_run() {
   DC="run" _dc --no-deps --rm "${@}"
 }
 
 # -----------------------------------------------------------------------------
 
-function cmd {
+cmd() {
   # Run any command you want in the web container
   _dc web "${@}"
 }
 
-function mix {
-  # Run any mix commands
-  cmd mix "${@}"
-}
-
-function iex {
+iex() {
   # Connect to an IEx session
   cmd iex -S mix
 }
 
-function secret {
+secret() {
   # Generate a random secret that can be used for secret keys and more
   mix phx.gen.secret
 }
 
-function lint:dockerfile {
+lint:dockerfile() {
   # Lint Dockerfile
   docker container run --rm -i \
     -v "${PWD}/.hadolint.yaml:/.config/hadolint.yaml" \
     hadolint/hadolint hadolint "${@}" - <Dockerfile
 }
 
-function lint {
+lint() {
   # Lint Elixir code
   mix credo
 }
 
-function format {
+format() {
   # Run the mix formatter
   mix format
 }
 
-function format:check {
+format:check() {
   # Check to see if there's an unformatted code
   format --check-formatted
 }
 
-function test {
+test() {
   # Run test suite
   _dc -e "MIX_ENV=test" web mix test "${@}"
 }
 
-function test:coverage {
+test:coverage() {
   # Get test coverage
   _dc -e "MIX_ENV=test" web mix coveralls "${@}"
 }
 
-function test:coverage:details {
+test:coverage:details() {
   # Get test coverage details
   _dc -e "MIX_ENV=test" web mix coveralls.detail "${@}"
 }
 
-function shell {
+shell() {
   # Start a shell session in the web container
   cmd bash "${@}"
 }
 
-function psql {
+psql() {
   # Connect to PostgreSQL
   # shellcheck disable=SC1091
   . .env
   _dc postgres psql -U "${POSTGRES_USER}" "${@}"
 }
 
-function deps:install {
+deps:install() {
   local no_build="${1:-}"
 
   [ -z "${no_build}" ] && docker compose down && docker compose build
@@ -104,31 +100,31 @@ function deps:install {
   _dc_run web mix deps.get
 }
 
-function mix {
+mix() {
   cmd mix "${@}"
 }
 
-function mix:outdated {
+mix:outdated() {
   # List any installed packages that are outdated
   _dc_run web mix hex.outdated
 }
 
-function yarn {
+yarn() {
   _dc js yarn "${@}"
 }
 
-function yarn:outdated {
+yarn:outdated() {
   # List any installed packages that are outdated
   _dc_run js yarn outdated
 }
 
-function yarn:build:js {
+yarn:build:js() {
   # Build JS assets, this is meant to be run from within the assets container
   mkdir -p ../priv/static/js
   node esbuild.config.mjs
 }
 
-function yarn:build:css {
+yarn:build:css() {
   # Build CSS assets, this is meant to be run from within the assets container
   local args=()
 
@@ -142,23 +138,23 @@ function yarn:build:css {
   tailwindcss -i css/app.css -o ../priv/static/css/app.css "${args[@]}"
 }
 
-function prod:migrate {
+prod:migrate() {
   # Run database migrations in production
   cmd bin/hello eval "Hello.Release.migrate"
 }
 
-function prod:remote {
+prod:remote() {
   # Connect an IEx session to your production system
   cmd bin/hello remote
 }
 
-function clean {
+clean() {
   # Remove cache and other machine generates files
   rm -rf priv/static/*.* priv/static/js priv/static/css priv/static/images priv/static/fonts
   touch priv/static/.keep
 }
 
-function ci:install-deps {
+ci:install-deps() {
   # Install Continuous Integration (CI) dependencies
   sudo apt-get install -y curl shellcheck
   sudo curl \
@@ -166,7 +162,7 @@ function ci:install-deps {
     -o /usr/local/bin/wait-until && sudo chmod +x /usr/local/bin/wait-until
 }
 
-function ci:test {
+ci:test() {
   # Execute Continuous Integration (CI) pipeline
   #
   # It's expected that your CI environment has these tools available:
@@ -194,7 +190,7 @@ function ci:test {
   test "${@}"
 }
 
-function help {
+help() {
   printf "%s <task> [args]\n\nTasks:\n" "${0}"
 
   compgen -A function | grep -v "^_" | cat -n
