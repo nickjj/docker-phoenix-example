@@ -11,6 +11,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - `./run mix [...]` to run any Mix command
 - `./run yarn [...]` to run any Yarn command
+- `./run lint:shell` for linting shell scripts with ShellCheck
 
 ### Changed
 
