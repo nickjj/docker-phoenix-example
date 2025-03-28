@@ -98,6 +98,16 @@ format() {
   mix format
 }
 
+quality() {
+  # Perform all code quality commands together
+  lint:dockerfile
+  lint:shell
+  lint
+
+  format:shell
+  format
+}
+
 test() {
   # Run test suite
   _dc -e "MIX_ENV=test" web mix test "${@}"

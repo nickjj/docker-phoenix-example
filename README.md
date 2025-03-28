@@ -195,6 +195,8 @@ Visit <http://localhost:8000> in your favorite browser.
 ./run format
 ```
 
+*There's also a `./run quality` command to lint and format all files.*
+
 #### Running the test suite:
 
 ```sh
@@ -308,8 +310,7 @@ adding custom changes.
 
 ```sh
 # You can run this from the same terminal as before.
-./run lint
-./run format
+./run quality
 ./run test
 ```
 

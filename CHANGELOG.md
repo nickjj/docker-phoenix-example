@@ -13,6 +13,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - `./run yarn [...]` to run any Yarn command
 - `./run lint:shell` for linting shell scripts with ShellCheck
 - `./run format:shell` for formatting shell scripts with shfmt
+- `./run quality` to run all linting and formatting commands
 
 ### Changed
 

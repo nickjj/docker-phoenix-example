@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <.live_title><%= assigns[:page_title] || "Docker + Phoenix" %></.live_title>
+    <.live_title>{assigns[:page_title] || "Docker + Phoenix"}</.live_title>
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -40,13 +40,13 @@
               <Heroicons.information_circle class="w-6 h-6 text-white" />
             </span>
             <p class="ml-3 font-medium text-white truncate">
-              Phoenix <%= @phoenix_ver %> and Elixir <%= @elixir_ver %>
+              Phoenix {@phoenix_ver} and Elixir {@elixir_ver}
             </p>
           </div>
           <div class="mt-2 order-3 w-full sm:mt-0 sm:w-auto">
             <div class="rounded-md shadow-xs">
               <span class="flex items-center justify-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-gray-500">
-                RUN_MODE = <%= @run_mode %>
+                RUN_MODE = {@run_mode}
               </span>
             </div>
           </div>
@@ -55,7 +55,7 @@
     </div>
 
     <main class="max-w-screen-lg mx-auto mb-auto">
-      <%= @inner_content %>
+      {@inner_content}
     </main>
 
     <footer class="text-center mt-6 pb-6 h-10">
