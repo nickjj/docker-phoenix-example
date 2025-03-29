@@ -49,13 +49,13 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 #### Front-end dependencies
 
-- Update `@tailwindcss/cli` to `4.0.9`
-- Update `@tailwindcss/postcss` to `4.0.9`
-- Update `esbuild` to `0.25.0`
-- Update `phoenix_html` to `4.2.0`
-- Update `phoenix_live_view` to `1.0.5`
-- Update `phoenix` to `1.7.20`
-- Update `tailwindcss` to `4.0.9`
+- Update `@tailwindcss/cli` to `4.0.17`
+- Update `@tailwindcss/postcss` to `4.0.17`
+- Update `esbuild` to `0.25.1`
+- Update `phoenix_html` to `4.2.1`
+- Update `phoenix_live_view` to `1.0.9`
+- Update `phoenix` to `1.7.21`
+- Update `tailwindcss` to `4.0.17`
 
 ## [0.9.0] - 2024-08-09
 
