@@ -1,4 +1,4 @@
-# An example Phoenix + Docker app
+# 🐳 An example Phoenix + Docker app
 
 You could use this example app as a base for your new project or as a guide to
 Dockerize your existing Phoenix app.
@@ -17,7 +17,7 @@ late 2014.
 
 [![Screenshot](.github/docs/screenshot.jpg)](https://github.com/nickjj/docker-phoenix-example/blob/main/.github/docs/screenshot.jpg?raw=true)
 
-## Table of contents
+## 🧾 Table of contents
 
 - [Tech stack](#tech-stack)
 - [Notable opinions and extensions](#notable-opinions-and-extensions)
@@ -33,7 +33,7 @@ late 2014.
   - [Deploy to production](#deploy-to-production)
 - [About the author](#about-the-author)
 
-## Tech stack
+## 🧬 Tech stack
 
 If you don't like some of these choices that's no problem, you can swap them
 out for something else on your own.
@@ -71,7 +71,7 @@ mostly Jinja templates with sprinkles of JS or an API back-end.
 Personally I'm going to be using LiveView with StimulusJS in most newer
 projects.
 
-## Notable opinions and packages
+## 🍣 Notable opinions and packages
 
 Phoenix is a healthy mix of being both opinionated and unopinionated but I
 find in most apps I'm adding the same things over and over. Here's a few note
@@ -83,7 +83,7 @@ worthy additions and changes.
     - All of this is automated through a multi-stage Dockerfile and build ARGs
 - **Static analysis and testing**:
     - *[credo](https://github.com/rrrene/credo)* helps create more consistent code
-    - *[excoveralls](https://github.com/parroty/excoveralls)* for getting detailed test coverge reports
+    - *[excoveralls](https://github.com/parroty/excoveralls)* for getting detailed test converge reports
 - **Controllers**:
     - Add `page` controller to render a home page
     - Add `up` controller with 2 health check related actions
@@ -107,7 +107,7 @@ Besides the Elixir / Phoenix app itself:
   its name
 - GitHub Actions have been set up
 
-## Running this app
+## 🚀 Running this app
 
 You'll need to have [Docker installed](https://docs.docker.com/get-docker/).
 It's available on Windows, macOS and most distros of Linux. If you're new to
@@ -216,7 +216,7 @@ docker compose down
 You can start things up again with `docker compose up` and unlike the first
 time it should only take seconds.
 
-## Files of interest
+## 🔍 Files of interest
 
 I recommend checking out most files and searching the code base for `TODO:`,
 but please review the `.env` and `run` files before diving into the rest of the
@@ -253,7 +253,7 @@ functions as you want. This file's purpose is to make your experience better!
 `alias run=./run` in your `~/.bash_aliases` or equivalent file. Then you'll be
 able to run `run` instead of `./run`.*
 
-## Running a script to automate renaming the project
+## ✨ Running a script to automate renaming the project
 
 The app is named `hello` right now but chances are your app will be a different
 name. Since the app is already created we'll need to do a find / replace on a
@@ -332,7 +332,7 @@ to it. If you want to reference me directly please link to my site at
 <https://nickjanetakis.com>. You don't have to do this, but it would be very
 much appreciated!
 
-## Updating dependencies
+## 🛠 Updating dependencies
 
 You can run `./run mix:outdated` or `./run yarn:outdated` to get a list of
 outdated dependencies based on what you currently have installed. Once you've
@@ -377,12 +377,12 @@ a Docker registry but if you decide to build your Docker images directly on
 your server you could run `docker compose build` as part of your deploy
 pipeline which is similar to how it would work in CI.
 
-## See a way to improve something?
+## 🤝 See a way to improve something?
 
 If you see anything that could be improved please open an issue or start a PR.
 Any help is much appreciated!
 
-## Additional resources
+## 🌎 Additional resources
 
 Now that you have your app ready to go, it's time to build something cool! If
 you want to learn more about Docker, Phoenix and deploying a Phoenix app here's
@@ -408,7 +408,7 @@ you want to get notified when it launches with a discount and potentially get
 free videos while the course is being developed then [sign up here to get
 notified](https://nickjanetakis.com/courses/deploy-to-production).
 
-## About the author
+## 👀 About the author
 
 - Nick Janetakis | <https://nickjanetakis.com> | [@nickjanetakis](https://twitter.com/nickjanetakis)
 
