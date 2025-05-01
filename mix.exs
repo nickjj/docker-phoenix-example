@@ -28,8 +28,8 @@ defmodule Hello.MixProject do
 
   defp deps do
     [
-      {:bandit, "1.6.10"},
-      {:credo, "1.7.11", only: [:dev, :test], runtime: false},
+      {:bandit, "1.6.11"},
+      {:credo, "1.7.12", only: [:dev, :test], runtime: false},
       {:dns_cluster, "0.2.0"},
       {:ecto_sql, "3.12.1"},
       {:excoveralls, "0.18.5", only: [:dev, :test]},
@@ -41,13 +41,13 @@ defmodule Hello.MixProject do
       {:phoenix, "1.7.21"},
       {:phoenix_ecto, "4.6.3"},
       {:phoenix_html, "4.2.1"},
-      {:phoenix_live_dashboard, "0.8.6"},
-      {:phoenix_live_reload, "1.5.3", only: :dev},
-      {:phoenix_live_view, "1.0.9"},
+      {:phoenix_live_dashboard, "0.8.7"},
+      {:phoenix_live_reload, "1.6.0", only: :dev},
+      {:phoenix_live_view, "1.0.10"},
       {:postgrex, "0.20.0"},
-      {:swoosh, "1.18.3"},
+      {:swoosh, "1.19.0"},
       {:telemetry_metrics, "1.1.0"},
-      {:telemetry_poller, "1.1.0"}
+      {:telemetry_poller, "1.2.0"}
     ]
   end
 
