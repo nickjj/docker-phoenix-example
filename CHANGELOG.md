@@ -54,9 +54,9 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 
 - Update `@tailwindcss/cli` to `4.1.5`
 - Update `@tailwindcss/postcss` to `4.1.5`
-- Update `esbuild` to `0.25.3`
+- Update `esbuild` to `0.25.4`
 - Update `phoenix_html` to `4.2.1`
-- Update `phoenix_live_view` to `1.0.10`
+- Update `phoenix_live_view` to `1.0.11`
 - Update `phoenix` to `1.7.21`
 - Update `tailwindcss` to `4.1.5`
 
