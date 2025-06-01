@@ -28,7 +28,7 @@ defmodule Hello.MixProject do
 
   defp deps do
     [
-      {:bandit, "1.6.11"},
+      {:bandit, "1.7.0"},
       {:credo, "1.7.12", only: [:dev, :test], runtime: false},
       {:dns_cluster, "0.2.0"},
       {:ecto_sql, "3.12.1"},
@@ -43,9 +43,9 @@ defmodule Hello.MixProject do
       {:phoenix_html, "4.2.1"},
       {:phoenix_live_dashboard, "0.8.7"},
       {:phoenix_live_reload, "1.6.0", only: :dev},
-      {:phoenix_live_view, "1.0.11"},
+      {:phoenix_live_view, "1.0.14"},
       {:postgrex, "0.20.0"},
-      {:swoosh, "1.19.0"},
+      {:swoosh, "1.19.1"},
       {:telemetry_metrics, "1.1.0"},
       {:telemetry_poller, "1.2.0"}
     ]
