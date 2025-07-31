@@ -35,7 +35,7 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `dns_cluster` to `0.2.0`
 - Update `ecto_sql` to `3.13.2`
 - Update `excoveralls` to `0.18.5`
-- Update `finch` to `0.19.0`
+- Update `finch` to `0.20.0`
 - Update `floki` to `0.38.0`
 - Update `gettext` to `0.26.2`
 - Update `heroicons` to `0.5.6`
@@ -43,12 +43,12 @@ Changelog](https://keepachangelog.com/en/1.0.0/).
 - Update `phoenix_html` to `4.2.1`
 - Update `phoenix_live_dashboard` to `0.8.7`
 - Update `phoenix_live_reload` to `1.6.0`
-- Update `phoenix_live_view` to `1.0.17`
+- Update `phoenix_live_view` to `1.1.1`
 - Update `phoenix` to `1.7.21`
-- Update `postgrex` to `0.20.0`
-- Update `swoosh` to `1.19.3`
+- Update `postgrex` to `0.21.0`
+- Update `swoosh` to `1.19.5`
 - Update `telemetry_metrics` to `1.1.0`
-- Update `telemetry_poller` to `1.2.0`
+- Update `telemetry_poller` to `1.3.0`
 
 #### Front-end dependencies
 
