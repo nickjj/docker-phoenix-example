@@ -11,7 +11,6 @@ defmodule Hello.Application do
       {DNSCluster,
        query: Application.get_env(:hello, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: Hello.PubSub},
-      {Finch, name: Hello.Finch},
       HelloWeb.Endpoint
       # Start a worker by calling: Hello.Worker.start_link(arg)
       # {Hello.Worker, arg}

@@ -20,7 +20,7 @@ defmodule HelloWeb.Endpoint do
   plug Plug.Static,
     at: "/",
     from: :hello,
-    gzip: false,
+    gzip: not code_reloading?,
     only: HelloWeb.static_paths()
 
   if code_reloading? do

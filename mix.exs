@@ -12,6 +12,8 @@ defmodule Hello.MixProject do
       deps_path: "/mix/deps",
       aliases: aliases(),
       deps: deps(),
+      compilers: [:phoenix_live_view] ++ Mix.compilers(),
+      listeners: [Phoenix.CodeReloader],
       test_coverage: [tool: ExCoveralls]
     ]
   end
@@ -23,12 +25,18 @@ defmodule Hello.MixProject do
     ]
   end
 
+  def cli do
+    [
+      preferred_envs: [precommit: :test]
+    ]
+  end
+
   defp elixirc_paths(:test), do: ["lib", "test/support"]
   defp elixirc_paths(_), do: ["lib"]
 
   defp deps do
     [
-      {:bandit, "1.7.0"},
+      {:bandit, "1.8.0"},
       {:credo, "1.7.12", only: [:dev, :test], runtime: false},
       {:dns_cluster, "0.2.0"},
       {:ecto_sql, "3.13.2"},
@@ -38,13 +46,13 @@ defmodule Hello.MixProject do
       {:gettext, "0.26.2"},
       {:heroicons, "0.5.6"},
       {:jason, "1.4.4"},
-      {:phoenix, "1.7.21"},
+      {:phoenix, "1.8.0"},
       {:phoenix_ecto, "4.6.5"},
       {:phoenix_html, "4.2.1"},
       {:phoenix_live_dashboard, "0.8.7"},
       {:phoenix_live_reload, "1.6.0", only: :dev},
-      {:phoenix_live_view, "1.1.1"},
-      {:postgrex, "0.21.0"},
+      {:phoenix_live_view, "1.1.8"},
+      {:postgrex, "0.21.1"},
       {:swoosh, "1.19.5"},
       {:telemetry_metrics, "1.1.0"},
       {:telemetry_poller, "1.3.0"}

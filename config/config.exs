@@ -23,7 +23,7 @@ config :hello, HelloWeb.Endpoint,
 
 config :hello, Hello.Repo, adapter: Ecto.Adapters.Postgres
 
-config :logger, :console,
+config :logger, :default_formatter,
   format: "$time $metadata[$level] $message\n",
   metadata: [:request_id]
 

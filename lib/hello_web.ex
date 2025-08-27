@@ -90,8 +90,9 @@ defmodule HelloWeb do
       import HelloWeb.CoreComponents
       import HelloWeb.Gettext
 
-      # Shortcut for generating JS commands
+      # Common modules used in templates
       alias Phoenix.LiveView.JS
+      alias HelloWeb.Layouts
 
       # Routes generation with the ~p sigil
       unquote(verified_routes())

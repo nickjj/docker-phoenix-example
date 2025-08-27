@@ -17,10 +17,13 @@ config :hello, dev_routes: true
 
 config :hello, Hello.Repo, show_sensitive_data_on_connection_error: true
 
-config :logger, :console, format: "[$level] $message\n"
+config :logger, :default_formatter, format: "[$level] $message\n"
 
 config :phoenix, :stacktrace_depth, 20
 config :phoenix, :plug_init_mode, :runtime
 
 # Include HEEx debug annotations as HTML comments in rendered markup.
-config :phoenix_live_view, :debug_heex_annotations, true
+config :phoenix_live_view,
+  debug_heex_annotations: true,
+  debug_attributes: true,
+  enable_expensive_runtime_checks: true
