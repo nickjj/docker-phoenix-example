@@ -1,5 +1,19 @@
 # 🐳 An example Phoenix + Docker app
 
+### ⚠️ Considering archiving this repo
+
+There's an [open
+issue](https://github.com/nickjj/docker-phoenix-example/issues/16) outlining
+the status of this project's future. If you'd like to see this project continue
+I suggest checking out that issue for details. Chances are this project will
+stop receiving updates in January 2026. My other example apps for
+[Rails](https://github.com/nickjj/docker-rails-example),
+[Flask](https://github.com/nickjj/docker-flask-example),
+[Django](https://github.com/nickjj/docker-django-example) and
+[Node](https://github.com/nickjj/docker-node-example) will remain updated.
+
+---
+
 You could use this example app as a base for your new project or as a guide to
 Dockerize your existing Phoenix app.
 
