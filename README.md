@@ -1,6 +1,6 @@
 # 🐳 An example Phoenix + Docker app
 
-### ⚠️ Archiving this repo on Dec 31st 2025
+### ⚠️ Why is this repo archived?!
 
 There's an [open
 issue](https://github.com/nickjj/docker-phoenix-example/issues/16) explaining
